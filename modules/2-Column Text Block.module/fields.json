@@ -1,0 +1,67 @@
+[ {
+  "id" : "d2d566e6-9a7b-0fdd-d853-baa53819d95b",
+  "name" : "left_image",
+  "display_width" : null,
+  "label" : "Left Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.remotish.agency/hubfs/Left%20Image.jpg",
+    "alt" : "Left Image",
+    "loading" : "lazy",
+    "width" : 467,
+    "height" : 455,
+    "max_width" : 467,
+    "max_height" : 455
+  }
+}, {
+  "id" : "37c4207f-82c9-679c-ddb8-7b4d6c1b3bb5",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "An Attention-Worthy Header"
+}, {
+  "id" : "77d00f16-133c-b0b3-2aa3-e202c7536dd6",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "96dd53b0-e276-8e2d-fdb1-f289a9da704c",
+    "name" : "enable_title",
+    "display_width" : null,
+    "label" : "Enable title",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_title" : true
+  }
+}, {
+  "id" : "96f472d4-3314-41cc-7ccb-8b697ef8e4e7",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Give an overview of your company; what you stand for and who you are. Try to appeal to your visitors' emotional states. <br><br>Emotions are what drive decisions, after all <span>—</span> especially decisions about buying.&nbsp;<br><br>Speak to their pain points, and how you solve them.&nbsp;</p>\n<h4><span>Bullet title</span></h4>\n<ul>\n<li><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a, nisl, morbi viverra amet vulputate sed justo mi.</span></li>\n</ul>\n<h4><span>Bullet title</span></h4>\n<ul>\n<li><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a, nisl, morbi viverra amet vulputate sed justo mi.</span></li>\n</ul>"
+} ]

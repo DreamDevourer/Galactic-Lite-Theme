@@ -1,0 +1,195 @@
+[ {
+  "id" : "5378dbb5-a066-ab91-c04b-bf494cabd394",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "What we Offer?"
+}, {
+  "id" : "895078f8-12ef-0901-0bd4-0bcec3509953",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas vehicula posuere ut sollicitudin duis amet. Est elit leo suscipit tempor blandit quisque."
+}, {
+  "id" : "3fc993c1-e96a-2e0b-5d00-7eb006183a19",
+  "name" : "services_box",
+  "display_width" : null,
+  "label" : "Services Box",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "cea41d01-ccfb-12d1-00aa-6c12eecbf85b",
+    "name" : "services_image",
+    "display_width" : null,
+    "label" : "Services Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/bi_shield-fill.png",
+      "alt" : "bi_shield-fill",
+      "loading" : "lazy",
+      "width" : 40,
+      "height" : 40,
+      "max_width" : 40,
+      "max_height" : 40
+    }
+  }, {
+    "id" : "a32235d6-1cec-caa8-dbba-f057d557ed03",
+    "name" : "services_title",
+    "display_width" : null,
+    "label" : "Services Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Security First"
+  }, {
+    "id" : "9fbe23d1-9c43-feed-f27d-d22e5cd5b270",
+    "name" : "services_content",
+    "display_width" : null,
+    "label" : "Services Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Connect the tools you already use to get more from them every time you work."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "services_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/bi_shield-fill.png",
+      "alt" : "bi_shield-fill",
+      "loading" : "lazy",
+      "width" : 40,
+      "height" : 40,
+      "max_width" : 40,
+      "max_height" : 40
+    },
+    "services_title" : "Security First",
+    "services_content" : "Connect the tools you already use to get more from them every time you work."
+  }, {
+    "services_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/bi_shield-fill.png",
+      "alt" : "bi_shield-fill",
+      "loading" : "lazy",
+      "width" : 40,
+      "height" : 40,
+      "max_width" : 40,
+      "max_height" : 40
+    },
+    "services_title" : "Security First",
+    "services_content" : "Connect the tools you already use to get more from them every time you work."
+  }, {
+    "services_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/bi_shield-fill.png",
+      "alt" : "bi_shield-fill",
+      "loading" : "lazy",
+      "width" : 40,
+      "height" : 40,
+      "max_width" : 40,
+      "max_height" : 40
+    },
+    "services_title" : "Security First",
+    "services_content" : "Connect the tools you already use to get more from them every time you work."
+  }, {
+    "services_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/bi_shield-fill.png",
+      "alt" : "bi_shield-fill",
+      "loading" : "lazy",
+      "width" : 40,
+      "height" : 40,
+      "max_width" : 40,
+      "max_height" : 40
+    },
+    "services_title" : "Security First",
+    "services_content" : "Connect the tools you already use to get more from them every time you work."
+  }, {
+    "services_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/bi_shield-fill.png",
+      "alt" : "bi_shield-fill",
+      "loading" : "lazy",
+      "width" : 40,
+      "height" : 40,
+      "max_width" : 40,
+      "max_height" : 40
+    },
+    "services_title" : "Security First",
+    "services_content" : "Connect the tools you already use to get more from them every time you work."
+  }, {
+    "services_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/bi_shield-fill.png",
+      "alt" : "bi_shield-fill",
+      "loading" : "lazy",
+      "width" : 40,
+      "height" : 40,
+      "max_width" : 40,
+      "max_height" : 40
+    },
+    "services_title" : "Security First",
+    "services_content" : "Connect the tools you already use to get more from them every time you work."
+  } ]
+}, {
+  "id" : "ecea96b8-96b2-411b-0489-c28e3313d891",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d7b4b405-c1b2-3db3-ec80-5ef67036eeac",
+    "name" : "enable_title",
+    "display_width" : null,
+    "label" : "Enable title",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_title" : true
+  }
+}, {
+  "id" : "fad2a445-dfb4-be77-eaf5-40b8b58a0609",
+  "name" : "class",
+  "display_width" : null,
+  "label" : "Class",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

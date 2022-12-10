@@ -1,0 +1,80 @@
+<section class="career_job__main">
+     <div class="container">
+									{% if module.style.enable_main_title %}
+         {% if module.header %}
+          <div class="section_header">
+             {{ module.header }}
+          </div>
+         {% endif %}
+									{% endif %}
+       
+         <div class="career_job__row">
+           {% for item in module.job_group %}
+             <div class="career_job__column">
+                  <h3>
+                    {{ item.title }}
+                  </h3>
+																	{% if module.style.enable_caption %}
+                <div class="caption_nametext">
+                  {{ item.caption }}
+                </div>
+																	{% endif %}
+																	{% if module.style.enable_location %}
+                <div class="caption_location">
+                  {{ item.location }}
+               </div>
+																	{% endif %}
+               
+               {% set href = item.link_field.url.href %}
+               {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+               {% set href = "mailto:" + href %}
+               {% endif %}
+               <a class="position_link" href="{{ href }}"
+                  {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                  {% if item.link_field.rel %}rel="{{ item.link_field.rel }}"{% endif %}
+                  >
+                
+               </a>
+             </div>
+           {% endfor %}
+           
+         </div>
+     
+         <div class="button_design load_more">
+            <a> {{module.load_more_button}} </a>
+         </div>
+ 
+       
+     </div>
+</section>
+
+
+
+
+{% require_js %}
+    <script>
+     $(document).ready(function(){
+       //$('.Main-body .post-item:gt(6)').hide(); 
+       postbox = $(".career_job__column").size();
+       x = 12;
+       //post = 3;
+       //post = (post + 3 <= postbox) ? post + 3 : postbox;
+       if (x == postbox) {
+         $('.load_more').hide();
+       }
+       $('.career_job__column:lt(' + x + ')').fadeIn();
+       $('.career_job__column:gt(' + (x-1) + ')').hide();
+
+       $('.load_more').click(function() {
+         x = (x + 4 <= postbox) ? x + 4 : postbox;
+         $('.career_job__column:lt(' + x + ')').fadeIn();
+         if (x == postbox) $('.load_more').hide();
+       });
+     });   
+    </script>
+{% end_require_js %}
+
+
+
+
+

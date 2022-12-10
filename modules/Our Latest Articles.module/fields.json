@@ -1,0 +1,83 @@
+[ {
+  "id" : "f17e72ba-2638-4743-e691-b0904a1bd779",
+  "name" : "field_group",
+  "display_width" : null,
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "b3faa449-9520-65b6-d672-20dcd2a60777",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Tag",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Sale"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "text_field" : "Sale"
+  }, {
+    "text_field" : "Sale"
+  }, {
+    "text_field" : "Sale"
+  } ]
+}, {
+  "id" : "f605b41b-51f9-b593-4662-6a54a5782b9b",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3322df8b-4bfc-8a27-cd74-8384dbebc430",
+    "name" : "enable_title",
+    "display_width" : null,
+    "label" : "Enable title",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "acb08244-403a-7c7e-11b6-6249375cad9c",
+    "name" : "enable_read_more_button",
+    "display_width" : null,
+    "label" : "Enable Read More Button",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_title" : true,
+    "enable_read_more_button" : true
+  }
+}, {
+  "id" : "36453b47-f65d-6ce4-72ee-f5a4752d13a3",
+  "name" : "number_of_post",
+  "display_width" : null,
+  "label" : "Number of Post",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number",
+  "default" : 5
+} ]

@@ -1,0 +1,48 @@
+[ {
+  "id" : "53993db2-0bea-fd5c-140c-f9e0e45c4de6",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a2822aac-e9ac-ed64-b6b7-7ace34ff9ed4",
+    "name" : "enable_recent_articles_title",
+    "display_width" : null,
+    "label" : "Enable Recent Articles title",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "8585bf23-50ac-0b78-6243-01519adda402",
+    "name" : "enable_recent_date",
+    "display_width" : null,
+    "label" : "Enable recent date",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_recent_articles_title" : true,
+    "enable_recent_date" : true
+  }
+}, {
+  "id" : "a765181f-4990-5241-52ea-a8db77ab3bdc",
+  "name" : "show_no_of_recent_post",
+  "display_width" : null,
+  "label" : "Show No Of Recent Post",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "max" : 10,
+  "step" : 1,
+  "type" : "number",
+  "default" : 8
+} ]

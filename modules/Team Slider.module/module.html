@@ -1,0 +1,92 @@
+<section class="team_slider__main">
+      <div class="">
+										{% if module.style.enable_title %}
+         {% if module.header %}
+           <div class="container">
+              <div class="solution_section__header">
+               {{ module.header }}
+              </div>
+           </div>
+        {% endif %}
+										{% endif %}
+        
+        <div class="team_slider__row">
+          {% for item in module.field_group %}
+              <div class="team_slider__column">
+                  <div class="team_slider__img" style="background-image:url({{ item.image_field.src }})">
+                    
+                  </div>
+                 <div class="team_slider__text">
+                     <h3>
+                        {{ item.title }}
+                    </h3>
+                    <div class="team_slider__position">
+                      {{ item.post_name }}
+                    </div>
+                 </div>
+                <div class="team_slider__social">
+                   <ul>
+                   {% for item2 in item.social_group %}
+                     <li> 
+                       {% set href = item2.link_field.url.href %}
+                       {% if item2.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                       {% set href = "mailto:" + href %}
+                       {% endif %}
+                       <a href="{{ href }}"
+                          {% if item2.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                          {% if item2.link_field.rel %}rel="{{ item2.link_field.rel }}"{% endif %}
+                          >
+                        
+                        {% icon
+                            name="{{ item2.icon_field.name }}"
+                            style="{{ item2.icon_field.type }}"
+                            unicode="{{ item2.icon_field.unicode }}"
+                            icon_set="{{ item2.icon_field.icon_set }}"
+                          %}
+
+                         
+                       </a>
+                     </li>
+                     	{% endfor %}
+                  </ul>
+                </div>
+                
+              </div>
+       {% endfor %}
+          
+       </div>
+        
+      </div>
+</section>
+
+
+
+
+
+
+ 
+ {% require_js %}
+    <script defer>  
+      $(document).ready(function(){
+          $('.team_slider__row').slick({
+            infinite: {% if module.style.infinite_scroll %}true{% else %}false{% endif %},
+            dots: true,
+            arrows: false,
+            slidesToShow: {{module.style.slides_to_show}},
+            slidesToScroll: {{module.style.slides_to_scroll}},
+            centerMode: true,
+            
+            variableWidth: true,
+             
+      
+          });
+        });
+    
+    </script>
+  {% end_require_js %}
+
+
+
+
+
+

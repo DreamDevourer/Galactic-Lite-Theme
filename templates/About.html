@@ -1,0 +1,161 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: About Us
+  screenshotPath: ../images/Thumbnails/Theme Template - About Us.png
+--> 
+
+{% extends './layouts/base.html' %}
+
+
+{% block header %} 
+
+<div class="transparent_header ">
+       {% global_partial path='./partials/header.html' %}
+</div>
+
+{% endblock header %} 
+
+
+{% block body %}
+<main class="body-container-wrapper">
+  {% dnd_area 'dnd_area' class='body-container body-container--about', label='Main section' %}
+
+    
+   {# about us First section #}
+    {% dnd_section 
+     padding={
+        'top':0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+      margin={
+        'top': '1em',
+        'bottom': '1em'
+      },
+      background_color="#F7F7F7"
+      
+      full_width = true
+      
+       %}
+      
+          {% dnd_module
+            path='../modules/About Hero',
+      
+          %}
+  
+          {% end_dnd_module %}
+   
+      
+   
+         
+  
+    {% end_dnd_section %}
+   {# end about us First section #}
+  
+   
+  
+  
+  
+  
+   {# about us second section #}
+    {% dnd_section 
+     padding={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+      
+       %}
+      
+          {% dnd_module
+            path='../modules/Solutions Section',
+            flexbox_positioning="TOP_CENTER",
+          
+             
+                
+            
+          %}
+           
+            
+  
+          {% end_dnd_module %}
+   
+      
+   
+         
+  
+    {% end_dnd_section %}
+   {# end about us second section #}
+  
+  
+  
+{# Testimonial #}
+    {% dnd_section 
+     padding={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+      
+       %}
+      
+          {% dnd_module
+            path='../modules/Testimonial Section',
+            flexbox_positioning="TOP_CENTER",
+          
+             
+                
+            
+          %}
+           
+            
+  
+          {% end_dnd_module %}
+   
+      
+    {% end_dnd_section %}
+ {# Testimonial #}
+  
+
+  
+  
+    
+{# Testimonial #}
+    {% dnd_section 
+     padding={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+      
+       %}
+      
+          {% dnd_module
+            path='../modules/Team Slider',
+            flexbox_positioning="TOP_CENTER",
+          
+             
+                
+            
+          %}
+           
+            
+  
+          {% end_dnd_module %}
+   
+      
+    {% end_dnd_section %}
+ {# Testimonial #}
+  
+  
+  
+  
+  
+  {% end_dnd_area %}
+</main>
+{% endblock body %}

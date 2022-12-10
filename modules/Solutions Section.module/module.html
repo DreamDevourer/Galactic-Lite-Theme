@@ -1,0 +1,33 @@
+<section class="solution_section__main">
+     <div class="container">
+									{% if module.style.enable_title %}
+        {% if module.header %}
+         <div class="solution_section__header">
+            {{ module.header }}
+         </div>
+       {% endif %}
+									{% endif %}
+       
+         <div class="solution_section__row">
+           {% for item in module.field_group %}
+             <div class="solution_section__column">
+                 <div class="solution_section__icon">
+                   {% if item.icon.src %}
+                   {% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}"' %}
+                   {% if item.icon.size_type == 'auto' %}
+                   {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                   {% elif item.icon.size_type == 'auto_custom_max' %}
+                   {% set sizeAttrs = 'width="{{ item.icon.max_width }}" height="{{ item.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                   {% endif %}
+                   {% set loadingAttr = item.icon.loading != 'disabled' ? 'loading="{{ item.icon.loading }}"' : '' %}
+                   <img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                   {% endif %}
+                 </div>
+                <div class="solution_section__text">
+                    {{ item.text }}
+               </div>
+             </div>
+           {% endfor %}
+         </div>
+    </div>
+</section>

@@ -1,0 +1,129 @@
+[ {
+  "id" : "0caca141-e1d0-e8ec-5fa7-778234c3d345",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Tell a better<br> brand story"
+}, {
+  "id" : "ebda5c4c-a52d-f5da-2f7b-b827d4f87e48",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a, nisl, morbi viverra amet vulputate sed justo mi."
+}, {
+  "id" : "006f9d9a-08d0-7319-5da3-71f7f8cee73b",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get Started"
+}, {
+  "id" : "2207d979-0f74-54d7-1c44-8112a981325a",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "aae29675-51b8-cb77-af2c-94bb34e3d736",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.remotish.agency/hubfs/hero.png",
+    "alt" : "hero",
+    "loading" : "lazy",
+    "width" : 540,
+    "height" : 522,
+    "max_width" : 540,
+    "max_height" : 522
+  }
+}, {
+  "id" : "9c2b4e20-978d-f10f-728a-8996a8e7715f",
+  "name" : "button_text_2",
+  "display_width" : null,
+  "label" : "Button Text 2",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Contact Us"
+}, {
+  "id" : "5fc5a54f-be57-4364-09fe-16909852075e",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c156ca32-4c56-7b37-8e35-b68d56ead516",
+    "name" : "enable_title",
+    "display_width" : null,
+    "label" : "Enable title",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_title" : true
+  }
+}, {
+  "id" : "4f1abe0c-5598-ee65-b414-e18af61e9df6",
+  "name" : "button_link_2",
+  "display_width" : null,
+  "label" : "Button Link 2",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

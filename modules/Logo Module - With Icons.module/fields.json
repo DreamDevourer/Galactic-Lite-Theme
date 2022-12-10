@@ -1,0 +1,239 @@
+[ {
+  "id" : "eb8d6d97-ecd6-2295-583f-f4519040d580",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2873d212-cda0-bf7b-4467-09ed6f05479b",
+    "name" : "icon_image",
+    "display_width" : null,
+    "label" : "Icon Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Vector%20(1).svg",
+      "alt" : "Vector (1)",
+      "loading" : "lazy",
+      "width" : 35,
+      "height" : 40,
+      "max_width" : 35,
+      "max_height" : 40
+    }
+  }, {
+    "id" : "f3745fa1-6841-df47-6a47-64699d023889",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Recognized Across The World"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "icon_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Vector%20(1).svg",
+      "alt" : "Vector (1)",
+      "loading" : "lazy",
+      "width" : 35,
+      "height" : 40,
+      "max_width" : 35,
+      "max_height" : 40
+    },
+    "text" : "Recognized Across The World"
+  }
+}, {
+  "id" : "afceb7c9-645b-1d59-968f-5c8ee64b4f12",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e52b3678-22a9-b573-123d-a747f2f7e42a",
+    "name" : "enable_text",
+    "display_width" : null,
+    "label" : "Enable text",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "44a378f6-d6e2-8e37-f7c3-04bb335aa197",
+    "name" : "slides_to_show",
+    "display_width" : null,
+    "label" : "Slides to show",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 1,
+    "max" : 7,
+    "step" : 1,
+    "type" : "number",
+    "default" : 5
+  }, {
+    "id" : "b4faab8e-8651-6362-12d6-57e17a014652",
+    "name" : "slides_to_scroll",
+    "display_width" : null,
+    "label" : "Slides to scroll",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 1,
+    "max" : 5,
+    "step" : 1,
+    "type" : "number",
+    "default" : 1
+  }, {
+    "id" : "50cc0350-bce2-d819-1f6f-6ebe03141490",
+    "name" : "infinite_scroll",
+    "display_width" : null,
+    "label" : "Infinite Scroll",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_text" : true,
+    "slides_to_show" : 5,
+    "slides_to_scroll" : 1,
+    "infinite_scroll" : true
+  }
+}, {
+  "id" : "4d2d26b4-5872-8e86-80e7-deaab0c9169b",
+  "name" : "logo_box",
+  "display_width" : null,
+  "label" : "Logo Box",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "925ef2b3-244f-a84a-d047-566e93b53532",
+    "name" : "logo",
+    "display_width" : null,
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Logo%20(1).svg",
+      "alt" : "Logo (1)",
+      "loading" : "lazy",
+      "width" : 78,
+      "height" : 60,
+      "max_width" : 78,
+      "max_height" : 60
+    }
+  }, {
+    "id" : "5670224f-cf08-b05e-8c9e-7812100ad3de",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Logo%20(1).svg",
+      "alt" : "Logo (1)",
+      "loading" : "lazy",
+      "width" : 78,
+      "height" : 60,
+      "max_width" : 78,
+      "max_height" : 60
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Logo%20(1).svg",
+      "alt" : "Logo (1)",
+      "loading" : "lazy",
+      "width" : 78,
+      "height" : 60,
+      "max_width" : 78,
+      "max_height" : 60
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Logo%20(1).svg",
+      "alt" : "Logo (1)",
+      "loading" : "lazy",
+      "width" : 78,
+      "height" : 60,
+      "max_width" : 78,
+      "max_height" : 60
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

@@ -1,0 +1,57 @@
+<div class="landinghero_area">
+  <div class="container">
+
+    <div class="landinghero_left">
+								{% if module.style.enable_title %}
+      {% if module.title %}<h1> {{ module.title }} </h1>{% endif %}
+								{% endif %}
+      {% if module.content %}<div class="landinghero_lefttext">{{ module.content }}</div>{% endif %}
+      <div class="hero_btns">
+        {% if module.button_text %}
+        <div class="solid_btn"> 
+          {% set href = module.button_link.url.href %}
+          {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+             {% if module.button_link.rel %}rel="{{ module.button_link.rel }}"{% endif %}
+             >
+            {{ module.button_text }}
+          </a>
+        </div> 
+        {% endif %}
+        {% if module.button_text_2 %}
+        <div class="border_btn"> 
+          {% set href = module.button_link_2.url.href %}
+          {% if module.button_link_2.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if module.button_link_2.open_in_new_tab %}target="_blank"{% endif %}
+             {% if module.button_link_2.rel %}rel="{{ module.button_link_2.rel }}"{% endif %}
+             >
+            {{ module.button_text_2 }}
+          </a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if module.image_field.src %}
+    <div class="landinghero_right">
+      {% if module.image_field.src %}
+      {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+      {% if module.image_field.size_type == 'auto' %}
+      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif module.image_field.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+      <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+    </div> 
+    {% endif %}
+
+  </div>
+</div>

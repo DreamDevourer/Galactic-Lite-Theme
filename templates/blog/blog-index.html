@@ -1,0 +1,197 @@
+<!--
+templateType: blog_listing
+isAvailableForNewContent: true
+label: Blog Listings
+screenshotPath: ../../images/Theme Template - Blog Listings.png
+-->
+
+{% extends '../layouts/base.html' %}
+{% set back_header = "black-header" %}
+
+
+{{ require_css(get_asset_url("../../css/templates/Blog new.css")) }}
+
+{% block body %}
+<main class="body-container-wrapper topheader-padding">
+  
+
+  
+ {% dnd_area 'dnd_area' class='body-container body-container--home', label='Main section' %}
+ 
+
+<!-----  Start Section ---->
+  
+
+
+      {% dnd_section
+         padding={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+      full_width='true',
+      flexbox_positioning="MIDDLE_LEFT"
+
+    
+    %}
+   
+         {% dnd_module
+            path='../../modules/Recent Articles', 
+            flexbox_positioning="TOP_CENTER",
+                  %}
+  
+          {% end_dnd_module %}
+   
+  
+    {% end_dnd_section %}
+<!-----  End Section ---->
+
+  
+  
+     {% dnd_section
+      
+         padding={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+      full_width='true',
+      flexbox_positioning="MIDDLE_LEFT"
+
+    
+    %}
+   
+         {% dnd_module
+            path='../../modules/Increase Sales', 
+            flexbox_positioning="TOP_CENTER",
+                  %}
+  
+          {% end_dnd_module %}
+   
+  
+    {% end_dnd_section %}
+  
+  
+
+  
+    
+     {% dnd_section
+      
+         padding={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+      full_width='true',
+      flexbox_positioning="MIDDLE_LEFT"
+
+    
+    %}
+   
+         {% dnd_module
+            path='../../modules/Our Latest Articles', 
+            flexbox_positioning="TOP_CENTER",
+                  %}
+  
+          {% end_dnd_module %}
+   
+  
+    {% end_dnd_section %}
+  
+  
+  
+   {% dnd_section
+      
+         padding={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+      full_width='true',
+      flexbox_positioning="MIDDLE_LEFT"
+
+    
+    %}
+   
+         {% dnd_module
+            path='../../modules/Check out new episodes', 
+            flexbox_positioning="TOP_CENTER",
+                  %}
+  
+          {% end_dnd_module %}
+   
+  
+    {% end_dnd_section %}
+  
+  
+  
+  
+     {% dnd_section
+      
+         padding={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+      full_width='true',
+      flexbox_positioning="MIDDLE_LEFT"
+
+    
+    %}
+   
+         {% dnd_module
+            path='../../modules/Podcasts that you will love', 
+            flexbox_positioning="TOP_CENTER",
+                  %}
+  
+          {% end_dnd_module %}
+   
+  
+    {% end_dnd_section %}
+  
+  
+  
+    
+     {% dnd_section
+      
+         padding={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+      full_width='true',
+      flexbox_positioning="MIDDLE_LEFT"
+
+    
+    %}
+   
+         {% dnd_module
+            path='../../modules/Blog Listing Subscribe', 
+            flexbox_positioning="TOP_CENTER",
+                  %}
+  
+          {% end_dnd_module %}
+   
+  
+    {% end_dnd_section %}
+  
+  
+  
+  
+  
+  
+{% end_dnd_area %}
+  
+  
+  
+  
+  
+
+</main>
+{% endblock body %}

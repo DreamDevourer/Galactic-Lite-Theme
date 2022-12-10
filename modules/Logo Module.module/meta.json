@@ -1,0 +1,13 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Clone:SOLID",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 93550539185,
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../js/Slick_Slider_Theme.js",
+    "name" : "Slick_Slider_Theme.js"
+  } ],
+  "label" : "Logos Display",
+  "is_available_for_new_content" : true
+}

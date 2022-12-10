@@ -1,0 +1,35 @@
+<div class="services_area {{ module.class }}">
+  <div class="container">
+
+    <div class="services_top title_style">
+								{% if module.style.enable_title %}
+      {% if module.title %}<h2>{{ module.title }}</h2>{% endif %}
+								{% endif %}
+      {% if module.content %}<div class="services_toptext">{{ module.content }}</div>{% endif %}
+    </div>
+
+    <div class="services_cover">
+      {% for item in module.services_box %}
+      <div class="services_box">
+        {% if item.services_image.src %}
+        <div class="services_icon">
+            {% if item.services_image.src %}
+              {% set sizeAttrs = 'width="{{ item.services_image.width }}" height="{{ item.services_image.height }}"' %}
+              {% if item.services_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+              {% elif item.services_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ item.services_image.max_width }}" height="{{ item.services_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+               {% set loadingAttr = item.services_image.loading != 'disabled' ? 'loading="{{ item.services_image.loading }}"' : '' %}
+              <img src="{{ item.services_image.src }}" alt="{{ item.services_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+        </div>
+        {% endif %}
+        {% if item.services_title %}<h3>{{ item.services_title }}</h3>{% endif %}
+        {% if item.services_content %}<div class="">{{ item.services_content }}</div>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>

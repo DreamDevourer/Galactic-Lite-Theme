@@ -1,0 +1,22 @@
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 1380px) {
+  .content-wrapper {
+    padding: 0;
+  }
+}
+.dnd-section .dnd-column {
+  padding: 0 20px;
+}
+
+@media (max-width: 767px) {
+  .dnd-section .dnd-column {
+    padding: 0 20px;
+  }  
+  
+  
+}

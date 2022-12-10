@@ -1,0 +1,260 @@
+[ {
+  "id" : "074eec4d-7bad-7734-3025-a423d367fc00",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Check out new episodes"
+}, {
+  "id" : "0cacd6e1-bd49-d3e3-dc5c-8ac72c6d944d",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "136bd141-dd29-65a3-1738-d40ed812cbc5",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Listen More"
+}, {
+  "id" : "8bdcd244-c617-f795-8b3e-1524f5d3b67f",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ade29c0d-018f-3b51-1d51-7b7d8ebffe76",
+    "name" : "enable_title",
+    "display_width" : null,
+    "label" : "Enable title",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_title" : true
+  }
+}, {
+  "id" : "fdd109c9-1b7b-c739-0673-0b19c47e8e2d",
+  "name" : "field_group",
+  "display_width" : null,
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "ab312c6a-2ee7-28b3-45c0-b78e202d1e86",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Imported%20images/Rectangle%209.png",
+      "alt" : "Rectangle 9",
+      "loading" : "lazy",
+      "width" : 244,
+      "height" : 244,
+      "max_width" : 244,
+      "max_height" : 244
+    }
+  }, {
+    "id" : "d8d21c78-bbcd-21b8-f1e6-d572bf78b2c0",
+    "name" : "episode_no",
+    "display_width" : null,
+    "label" : "Episode No",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Episode 4:"
+  }, {
+    "id" : "93d4f2ab-bd81-fd7a-33d5-d690ecefeb19",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Increase Sales"
+  }, {
+    "id" : "39ff59ec-c7c0-0a9c-ab46-08d26c5a9de1",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Imported%20images/Rectangle%209.png",
+      "alt" : "Rectangle 9",
+      "loading" : "lazy",
+      "width" : 244,
+      "height" : 244,
+      "max_width" : 244,
+      "max_height" : 244
+    },
+    "episode_no" : "Episode 4:",
+    "text_field" : "Increase Sales",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Imported%20images/Rectangle%209.png",
+      "alt" : "Rectangle 9",
+      "loading" : "lazy",
+      "width" : 244,
+      "height" : 244,
+      "max_width" : 244,
+      "max_height" : 244
+    },
+    "episode_no" : "Episode 4:",
+    "text_field" : "Increase Sales",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Imported%20images/Rectangle%209.png",
+      "alt" : "Rectangle 9",
+      "loading" : "lazy",
+      "width" : 244,
+      "height" : 244,
+      "max_width" : 244,
+      "max_height" : 244
+    },
+    "episode_no" : "Episode 4:",
+    "text_field" : "Increase Sales",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Imported%20images/Rectangle%209.png",
+      "alt" : "Rectangle 9",
+      "loading" : "lazy",
+      "width" : 244,
+      "height" : 244,
+      "max_width" : 244,
+      "max_height" : 244
+    },
+    "episode_no" : "Episode 4:",
+    "text_field" : "Increase Sales",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Imported%20images/Rectangle%209.png",
+      "alt" : "Rectangle 9",
+      "loading" : "lazy",
+      "width" : 244,
+      "height" : 244,
+      "max_width" : 244,
+      "max_height" : 244
+    },
+    "episode_no" : "Episode 4:",
+    "text_field" : "Increase Sales",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

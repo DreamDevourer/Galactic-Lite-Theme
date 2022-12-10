@@ -1,0 +1,85 @@
+[ {
+  "id" : "ccd43916-a840-c6e4-f54e-54cd7020418b",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "You will have weekly resourceful content"
+}, {
+  "id" : "d14ce463-f8c7-2222-b096-ae9a871deb9d",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Subscribe to our content"
+}, {
+  "id" : "9b219948-43e9-e3fc-6aea-cfae5907f3c6",
+  "name" : "form_field",
+  "display_width" : null,
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "6db5ea05-7c6b-45aa-8c6e-03e74d042eb7",
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form.",
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+}, {
+  "id" : "e863ccf8-f44e-9911-d043-9612aa3beab7",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "9948e06b-dda7-417a-d73c-168300ac55a0",
+    "name" : "enable_title",
+    "display_width" : null,
+    "label" : "Enable title",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_title" : true
+  }
+}, {
+  "id" : "4b33a14b-7405-f9b2-10b3-6f6b0c6f2ba4",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.remotish.agency/hubfs/Member.png",
+    "alt" : "Member",
+    "loading" : "lazy",
+    "width" : 530,
+    "height" : 582,
+    "max_width" : 530,
+    "max_height" : 582
+  }
+} ]

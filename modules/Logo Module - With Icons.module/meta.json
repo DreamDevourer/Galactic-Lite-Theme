@@ -1,0 +1,13 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Alternate%20Share%20Square:SOLID",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 93553823882,
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../js/Slick_Slider_Theme.js",
+    "name" : "Slick_Slider_Theme.js"
+  } ],
+  "label" : "Logos Display with Icons",
+  "is_available_for_new_content" : true
+}

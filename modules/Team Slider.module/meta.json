@@ -1,0 +1,13 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Address%20Book:SOLID",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 93551240619,
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../js/Slick_Slider_Theme.js",
+    "name" : "Slick_Slider_Theme.js"
+  } ],
+  "label" : "Team Slider",
+  "is_available_for_new_content" : true
+}

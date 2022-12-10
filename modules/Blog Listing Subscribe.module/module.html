@@ -1,0 +1,38 @@
+<section class="blog_listing_subscribe">
+      <div class="container">
+         <div class="blog_listing_row">
+               <div class="blog_listing_left">
+                 <div class="blog_listing_header">
+                   <span class="list_cap"> {{ module.title }} </span>
+																					{% if module.style.enable_title %}
+                   <h2>
+                     {{ module.header }}
+                   </h2>
+																					{% endif %}
+                 </div>
+                 <div class="blog_subscribe_form">
+                   {% form
+                      form_to_use="{{ module.form_field.form_id }}"
+                      response_response_type="{{ module.form_field.response_type }}"
+                      response_message="{{ module.form_field.message }}"
+                      response_redirect_id="{{ module.form_field.redirect_id }}"
+                      response_redirect_url="{{module.form_field.redirect_url}}"
+                      gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+                    %}
+                 </div>
+               </div>
+               <div class="blog_listing_right">
+                 {% if module.image_field.src %}
+                 {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+                 {% if module.image_field.size_type == 'auto' %}
+                 {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                 {% elif module.image_field.size_type == 'auto_custom_max' %}
+                 {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                 {% endif %}
+                 {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+                 <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                 {% endif %}
+               </div>
+            </div>
+      </div>
+</section>

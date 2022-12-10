@@ -1,0 +1,53 @@
+{% set playImg = get_asset_url('../../images/PLAY.png') %}
+
+<section class="episode_video">
+
+    <div class="container">
+
+      <div class="episode_video_row">
+        <div class="episode_video_left">
+          <div class="video_popup">
+            <a data-fancybox class="play_video" href="{{ module.video_link }}"><img src="{{ playImg }}" alt="image"></a>
+          </div>
+        </div>
+        <div class="episode_video_right">
+          <span>{{ module.text_field }}</span>
+												{% if module.style.enable_title %}
+          <h2>
+           {{ module.title }}
+          </h2>
+												{% endif %}
+          {{ module.richtext_field }}
+          
+												{% if module.style.enable_button %}
+          {% if module.button_text %}
+          <div class="button_deign">
+           
+              {% set href = module.link_field.url.href %}
+              {% if module.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              {% set rel = [] %}
+              {% if module.link_field.no_follow %}
+              {% do rel.append("nofollow") %}
+              {% endif %}
+              {% if module.link_field.open_in_new_tab %}
+              {% do rel.append("noopener") %}
+              {% endif %}
+              <a href="{{ href }}"
+                 {% if module.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                 >
+                {{ module.button_text }}
+              </a>
+            
+          </div>
+          {% endif %}
+												{% endif %}
+          
+        </div>        
+      </div>
+
+    </div>
+
+  </section>

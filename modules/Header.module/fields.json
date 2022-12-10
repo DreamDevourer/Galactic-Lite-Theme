@@ -1,0 +1,127 @@
+[ {
+  "id" : "b26c09ec-6c64-d47f-e15a-1013826a6064",
+  "name" : "logo_color",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "show_loading" : false,
+  "type" : "logo",
+  "default" : {
+    "override_inherited_src" : true,
+    "src" : "https://www.remotish.agency/hubfs/Galactic%20(1).svg",
+    "alt" : "Galactic (1)",
+    "suppress_company_name" : true,
+    "width" : 99,
+    "height" : 21
+  }
+}, {
+  "id" : "ad4b1d85-50a1-af40-bec6-2f94284ba75e",
+  "name" : "logo_white",
+  "display_width" : null,
+  "label" : "Logo White",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.remotish.agency/hubfs/Galactic.svg",
+    "alt" : "Galactic",
+    "width" : 99,
+    "height" : 21,
+    "max_width" : 99,
+    "max_height" : 21
+  }
+}, {
+  "id" : "187ad7e4-ac75-aad1-7c4d-deec714cdd83",
+  "name" : "logo_link",
+  "display_width" : null,
+  "label" : "Logo Link",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "https://marketplace.remotish.agency/galactic-theme",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://marketplace.remotish.agency/galactic-theme"
+}, {
+  "id" : "e2c54af5-387c-2d7a-3d5a-cf48b274ac55",
+  "name" : "menu_field",
+  "display_width" : null,
+  "label" : "Menu",
+  "required" : false,
+  "locked" : false,
+  "type" : "menu",
+  "default" : ""
+}, {
+  "id" : "f154bde8-003c-55fd-cc77-c135f888b195",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://marketplace.remotish.agency/galactic-theme/documentation",
+      "content_id" : null
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "64783c2c-f05b-e74c-310d-78ccff1a9a9d",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ca3d61cb-426a-81db-db46-581b4f027850",
+    "name" : "enable_menu",
+    "display_width" : null,
+    "label" : "Enable menu?",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "187d7007-815c-2681-2e50-4d928ff48a45",
+    "name" : "include_cta",
+    "display_width" : null,
+    "label" : "Include CTA",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_menu" : true,
+    "include_cta" : true
+  }
+}, {
+  "id" : "759dcc95-25d1-d982-e620-8516a2ea188c",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Documentation",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Documentation"
+} ]

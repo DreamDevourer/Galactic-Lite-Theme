@@ -1,0 +1,154 @@
+[ {
+  "id" : "86ff5709-ec5c-cf94-9de8-191fd7ab87c3",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>A Complete set of solutions</h2>\n<p>In addition to working with an awesome, fun-loving team</p>"
+}, {
+  "id" : "60e4f155-14b8-5eae-8d3a-7958d137075c",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d80bf90e-7de8-753d-1a77-e479d6375a7d",
+    "name" : "enable_title",
+    "display_width" : null,
+    "label" : "Enable title",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_title" : true
+  }
+}, {
+  "id" : "8e21c830-2cc3-be62-121c-184b98df6727",
+  "name" : "field_group",
+  "display_width" : null,
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "0c2260e8-ee4e-dc41-1c19-d4b2b935544b",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Galactic_Theme/bx_bxs-building.svg",
+      "alt" : "bx_bxs-building",
+      "loading" : "lazy",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    }
+  }, {
+    "id" : "3469c5d9-4ffe-2bd7-336b-3e3df8914fe1",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>Enterprise</h3>\n<p>Connect the tools you already use to get more from them every time you work.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Galactic_Theme/bx_bxs-building.svg",
+      "alt" : "bx_bxs-building",
+      "loading" : "lazy",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "text" : "<h3>Enterprise</h3>\n<p>Connect the tools you already use to get more from them every time you work.</p>"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Galactic_Theme/bx_bxs-building.svg",
+      "alt" : "bx_bxs-building",
+      "loading" : "lazy",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "text" : "<h3>Enterprise</h3>\n<p>Connect the tools you already use to get more from them every time you work.</p>"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Galactic_Theme/bx_bxs-building.svg",
+      "alt" : "bx_bxs-building",
+      "loading" : "lazy",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "text" : "<h3>Enterprise</h3>\n<p>Connect the tools you already use to get more from them every time you work.</p>"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Galactic_Theme/bx_bxs-building.svg",
+      "alt" : "bx_bxs-building",
+      "loading" : "lazy",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "text" : "<h3>Enterprise</h3>\n<p>Connect the tools you already use to get more from them every time you work.</p>"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Galactic_Theme/bx_bxs-building.svg",
+      "alt" : "bx_bxs-building",
+      "loading" : "lazy",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "text" : "<h3>Enterprise</h3>\n<p>Connect the tools you already use to get more from them every time you work.</p>"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Galactic_Theme/bx_bxs-building.svg",
+      "alt" : "bx_bxs-building",
+      "loading" : "lazy",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "text" : "<h3>Enterprise</h3>\n<p>Connect the tools you already use to get more from them every time you work.</p>"
+  } ]
+} ]

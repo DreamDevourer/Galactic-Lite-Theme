@@ -1,0 +1,68 @@
+<style>
+		{% scope_css %}
+						.vidyard-player-container, .about_hero__img {
+								border-radius: {{module.style.default_content_border_radius}}px !important;
+						}
+		{% end_scope_css %}
+</style>
+
+<section class="about_hero__main" style="background-image:url('{{ module.bg_image.src }}'); ">
+    <div class="container">
+         <div class="about_hero__header">
+             {{ module.header }}
+         </div>
+						<br>
+						{% if module.style.enable_cta %}
+						       {% set href = module.cta_link.url.href %}
+             {% if module.cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+             {% set href = "mailto:" + href %}
+             {% endif %}
+             {% set rel = [] %}
+             {% if module.cta_link.no_follow %}
+             {% do rel.append("nofollow") %}
+             {% endif %}
+             {% if module.cta_link.open_in_new_tab %}
+             {% do rel.append("noopener") %}
+             {% endif %}
+        <div class="cta-design">
+										<a href="{{href}}">
+										  {{module.cta_text}}
+										</a>
+						</div>
+						{% endif %}
+													
+    </div>
+</section>
+
+<section class="about_hero__imgmain">
+  <div class="container">
+    <div class="about_hero__img">
+      {% if module.image_field.src %}
+      {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+      {% if module.image_field.size_type == 'auto' %}
+      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif module.image_field.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+      <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+
+
+
+{% require_css %}
+    <style>
+						
+      @media (max-width:767px){
+      .about_hero__imgmain{     margin-top: 0; }
+      .about_hero__imgmain {     background-size: cover;  background-position: center; background-repeat: no-repeat; background-image:url('{{ module.bg_image.src }}');  }  
+      .about_hero__imgmain{    padding-top: 38px;     padding-bottom: 58px;  }
+ 
+      }  
+    </style>
+
+{% end_require_css %}

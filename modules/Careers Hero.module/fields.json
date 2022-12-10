@@ -1,0 +1,55 @@
+[ {
+  "id" : "03188ebf-4e79-c6c0-00b9-247dc37a6c34",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h1>Join Galactic Team</h1>\n<p>We hire smart, self-motivated people. Let them build their own schedules. Give them a budget for education to feed their hunger for growth. Mentor them into even better professionals.</p>"
+}, {
+  "id" : "acf91c3d-17be-b43b-3623-78f991796886",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2ee9dded-f496-0761-acd2-b44c00015310",
+    "name" : "enable_title",
+    "display_width" : null,
+    "label" : "Enable title",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_title" : true
+  }
+}, {
+  "id" : "380c5d41-d977-cce1-b789-63486ba8c864",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.remotish.agency/hubfs/Galactic_Theme/Blob.png",
+    "alt" : "Blob",
+    "loading" : "lazy",
+    "width" : 891,
+    "height" : 810,
+    "max_width" : 891,
+    "max_height" : 810
+  }
+} ]

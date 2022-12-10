@@ -1,0 +1,139 @@
+<section class="latest_articles">
+
+    <div class="container">
+								{% if module.style.enable_title %}
+      <div class="articles_name">
+        <h2>Our Latest Articles</h2>
+      </div>
+								{% endif %}
+
+      <div class="fliter_main_row filters">
+        <ul>
+          <li class="active" data-filter="*">ALL</li>
+          {% for item in module.field_group %}
+             <li data-filter=".{{  item.text_field|lower|replace(' ', '-')}}"> {{ item.text_field }} </li>
+          {% endfor %}
+         
+        </ul>
+      </div>
+    {% set rec_posts = blog_recent_posts(group.id, module.number_of_post) %}
+      <div class="flter_row grid">
+       {% for rec_post in rec_posts %}
+          <div class="filter_cover single-content   grid-item  {% for topic in rec_post.topic_list %} {{ topic.name|lower|replace(' ', '-') }} {% endfor %}">
+            <div class="filter_image" style="background-image:url('{{ rec_post.featured_image }}')">
+
+            </div>
+            <div class="filter_name">
+              <span>{{ rec_post.publish_date|datetimeformat('%Y') }} - {{ rec_post.blog_author.display_name }}</span>
+               <h2><a href="{{ rec_post.absolute_url }}">  <h2>{{ rec_post.name }}</h2> </a></h2>
+            </div>
+          </div>
+       {% endfor %}
+              
+
+      </div>
+								
+								{% if module.style.enable_read_more_button %}
+      <div class="filter_btn">
+        <a id="showMore" href="" class="btn">Read More</a>
+      </div>
+								{% endif %}
+
+    </div>
+
+  </section>
+
+
+
+{% require_js %}
+  
+<script defer>
+ $(document).ready( function() {   
+     
+      // init Isotope
+      var initial_items = 6;
+      var next_items = 3;
+      var $grid = $('.grid').isotope({
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows',
+
+      });
+
+
+      // bind filter button click
+      $('.fliter_main_row').on('click', 'li', function () {
+        var filterValue = $(this).attr('data-filter');
+        // use filterFn if matches value
+        $grid.isotope({filter: filterValue});
+        updateFilterCounts();
+      });
+      function updateFilterCounts() {
+        // get filtered item elements
+        var itemElems = $grid.isotope('getFilteredItemElements');
+        var count_items = $(itemElems).length;
+
+        if (count_items > initial_items) {
+          $('#showMore').show();
+        }
+        else {
+          $('#showMore').hide();
+        }
+        if ($('.grid-item').hasClass('visible_item')) {
+          $('.grid-item').removeClass('visible_item');
+        }
+        var index = 0;
+
+        $(itemElems).each(function () {
+          if (index >= initial_items) {
+            $(this).addClass('visible_item');
+          }
+          index++;
+        });
+        $grid.isotope('layout');
+      }
+      // change is-checked class on buttons
+      $('.fliter_main_row').each(function (i, buttonGroup) {
+        var $buttonGroup = $(buttonGroup);
+        $buttonGroup.on('click', 'li', function () {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $(this).addClass('is-checked');
+        });
+      });
+
+      function showNextItems(pagination) {
+        var itemsMax = $('.visible_item').length;
+        var itemsCount = 0;
+        $('.visible_item').each(function () {
+          if (itemsCount < pagination) { $(this).removeClass('visible_item'); itemsCount++; } }); if (itemsCount >= itemsMax) {
+          $('#showMore').hide();
+        }
+        $grid.isotope('layout');
+      }
+      // function that hides items when page is loaded
+      function hideItems(pagination) {
+        var itemsMax = $('.grid-item').length;
+        var itemsCount = 0;
+        $('.grid-item').each(function () {
+          if (itemsCount >= pagination) {
+            $(this).addClass('visible_item');
+          }
+          itemsCount++;
+        });
+        if (itemsCount < itemsMax || initial_items >= itemsMax) {
+          $('#showMore').hide();
+        }
+        $grid.isotope('layout');
+      }
+      $('#showMore').on('click', function (e) {
+        e.preventDefault();
+        showNextItems(next_items);
+      });
+      hideItems(initial_items);
+   
+});
+  
+  </script>
+  
+{% end_require_js %}
+
+

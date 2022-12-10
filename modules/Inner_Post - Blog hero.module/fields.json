@@ -1,0 +1,79 @@
+[ {
+  "id" : "3b12bd22-8e3f-f24a-f4a2-700c6b9b8833",
+  "name" : "details",
+  "display_width" : null,
+  "label" : "Details",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Lorem Ipsum is simply dummy text of the printing"
+}, {
+  "id" : "71b9377d-663b-34ef-cdc7-e903980658e7",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Download Bio Templates"
+}, {
+  "id" : "ab86e07d-4890-985a-a87b-c0968779a8b4",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "540391f3-5dbf-c739-0579-941a2ec12303",
+    "name" : "enable_author",
+    "display_width" : null,
+    "label" : "Enable author",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "fcf486a4-be8f-c613-59fa-4731b2f0b33c",
+    "name" : "enable_author_socials",
+    "display_width" : null,
+    "label" : "Enable author socials",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "04b24f9a-78b6-d288-61b3-21924224091a",
+    "name" : "enable_button",
+    "display_width" : null,
+    "label" : "Enable button",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_author" : true,
+    "enable_author_socials" : true,
+    "enable_button" : true
+  }
+}, {
+  "id" : "37aa0351-5601-727c-2cbe-14ab0f9f09b9",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

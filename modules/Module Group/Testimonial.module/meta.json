@@ -1,0 +1,13 @@
+{
+  "global" : false,
+  "icon" : "star",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 93549145172,
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../../js/Slick_Slider_Theme.js",
+    "name" : "Slick_Slider_Theme.js"
+  } ],
+  "label" : "Testimonial",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,90 @@
+[ {
+  "id" : "7cdf07e6-63f0-9477-31c2-0ff1c1a84c7b",
+  "name" : "profile_name",
+  "display_width" : null,
+  "label" : "Profile Name",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Emily Doe"
+}, {
+  "id" : "2bac6129-2b7c-0574-c789-6fe35656dbb9",
+  "name" : "profile_possition",
+  "display_width" : null,
+  "label" : "Profile Possition",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "CEO of Company LCC"
+}, {
+  "id" : "96a1d3b6-9de3-7750-f6e3-23065dd11870",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>”Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a, nisl, morbi viverra amet vulputate sed justo mi. Sollicitudin sem quam enim elit duis netus pulvinar.”</p>"
+}, {
+  "id" : "f381252e-3fee-d01c-3f0d-3fbefe7b1619",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "4ce7db95-8a0b-044f-8431-11a0f0f00e91",
+    "name" : "enable_profile_name",
+    "display_width" : null,
+    "label" : "Enable profile name",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "aaf76c0d-46d7-f07e-bded-44035b6917bd",
+    "name" : "enable_position",
+    "display_width" : null,
+    "label" : "Enable position",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_profile_name" : true,
+    "enable_position" : true
+  }
+}, {
+  "id" : "bdce5bf2-64c5-2ccc-e0ce-31f962dab12e",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.remotish.agency/hubfs/Galactic_Theme/Rectangle%20334%20(1).png",
+    "alt" : "Rectangle 334 (1)",
+    "loading" : "lazy",
+    "width" : 638,
+    "height" : 744,
+    "max_width" : 638,
+    "max_height" : 744
+  }
+} ]

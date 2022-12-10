@@ -1,0 +1,448 @@
+[ {
+  "id" : "349fcc08-1a39-4d4b-c0d1-c4e46d27a546",
+  "name" : "footer_column_1",
+  "display_width" : null,
+  "label" : "Logo and Socials",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "9fdc29fe-c25f-38d9-5625-2d7d29662ed0",
+    "name" : "footer_logo",
+    "display_width" : null,
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "show_loading" : false,
+    "type" : "logo",
+    "default" : {
+      "override_inherited_src" : true,
+      "src" : "https://www.remotish.agency/hubfs/Galactic.svg",
+      "alt" : "Galactic",
+      "suppress_company_name" : true,
+      "width" : 99,
+      "height" : 21
+    }
+  }, {
+    "id" : "dfb8650f-fe00-1933-31e6-06b2fd4308ea",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>One line about who you are and who you serve.</p>\n<p>&nbsp;</p>\n<p><a href=\"https://www.remotish.agency/\" rel=\"noopener\"><span>Theme designed and developed by Remotish</span></a></p>"
+  }, {
+    "id" : "79df6126-8308-5dda-09ad-32bb2508fefe",
+    "name" : "enable_facebook",
+    "display_width" : null,
+    "label" : "Enable Facebook?",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "c80cd45a-3735-d9a1-82c5-d3f3c666ae11",
+    "name" : "facebook",
+    "display_width" : null,
+    "label" : "Facebook",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "https://www.facebook.com/Chief-Martech-Officer-2141721729485675"
+  }, {
+    "id" : "0cadde12-4854-8580-46eb-8fb8dd0d963c",
+    "name" : "enable_instagram",
+    "display_width" : null,
+    "label" : "Enable Instagram?",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "c535986f-47c9-2410-7195-8b9c14e47ddd",
+    "name" : "instagram",
+    "display_width" : null,
+    "label" : "instagram",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "badb9ddb-24dc-58aa-9bfb-63107cae7238",
+    "name" : "enable_twitter",
+    "display_width" : null,
+    "label" : "Enable Twitter?",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "43ff3fe5-004d-ff9a-749c-2f57275bd3eb",
+    "name" : "twitter",
+    "display_width" : null,
+    "label" : "twitter",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "789c68fb-500e-0a3c-1e67-aa994943a9a2",
+    "name" : "enable_linkedin",
+    "display_width" : null,
+    "label" : "Enable LinkedIn?",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "90df12ac-c03a-cb98-ded9-d52b18233f7d",
+    "name" : "linkedin",
+    "display_width" : null,
+    "label" : "linkedin",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "ffaac490-033c-7154-0e28-f0687251b01c",
+    "name" : "enable_youtube",
+    "display_width" : null,
+    "label" : "Enable Youtube?",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "f52a7b6e-7a00-924c-4c81-0dbac30d040d",
+    "name" : "youtube",
+    "display_width" : null,
+    "label" : "youtube",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "footer_logo" : {
+      "override_inherited_src" : true,
+      "src" : "https://www.remotish.agency/hubfs/Galactic.svg",
+      "alt" : "Galactic",
+      "suppress_company_name" : true,
+      "width" : 99,
+      "height" : 21
+    },
+    "richtext_field" : "<p>One line about who you are and who you serve.</p>\n<p>&nbsp;</p>\n<p><a href=\"https://www.remotish.agency/\" rel=\"noopener\"><span>Theme designed and developed by Remotish</span></a></p>",
+    "enable_facebook" : true,
+    "facebook" : "https://www.facebook.com/Chief-Martech-Officer-2141721729485675",
+    "enable_instagram" : false,
+    "enable_twitter" : false,
+    "enable_linkedin" : true,
+    "enable_youtube" : true
+  }
+}, {
+  "id" : "55c805aa-8cb8-7b27-b778-532683d7fe40",
+  "name" : "footer_coulmn_2",
+  "display_width" : null,
+  "label" : "Badges",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "bcd9274f-7ef1-d8c2-65e2-022eb7b58cd1",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : ""
+    }
+  }, {
+    "id" : "dcfa2560-9d11-74ac-269b-29bfe53e0a4e",
+    "name" : "image_2",
+    "display_width" : null,
+    "label" : "Image 2",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "exact",
+      "src" : "",
+      "alt" : null
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "src" : ""
+    },
+    "image_2" : {
+      "size_type" : "exact",
+      "src" : "",
+      "alt" : null
+    }
+  }
+}, {
+  "id" : "6af910c1-6bdb-7cea-2f99-a6ecc0f8f0b4",
+  "name" : "footer_column_3",
+  "display_width" : null,
+  "label" : "Links",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f34dd430-1bb4-9a39-6776-b7f895dca205",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "More Links"
+  }, {
+    "id" : "10f5e451-5052-6de6-2908-8c4cff4b8d3e",
+    "name" : "simplemenu_field",
+    "display_width" : null,
+    "label" : "Simple menu",
+    "required" : false,
+    "locked" : false,
+    "type" : "simplemenu",
+    "default" : [ {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "Link 1",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "PAGE_LINK",
+      "children" : [ ]
+    }, {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "Link 2",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "PAGE_LINK",
+      "children" : [ ]
+    }, {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "Link 3",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "PAGE_LINK",
+      "children" : [ ]
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "More Links",
+    "simplemenu_field" : [ {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "Link 1",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "PAGE_LINK",
+      "children" : [ ]
+    }, {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "Link 2",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "PAGE_LINK",
+      "children" : [ ]
+    }, {
+      "isPublished" : false,
+      "pageLinkId" : null,
+      "pageLinkName" : null,
+      "isDeleted" : null,
+      "categoryId" : null,
+      "subCategory" : null,
+      "contentType" : null,
+      "state" : null,
+      "linkLabel" : "Link 3",
+      "linkUrl" : null,
+      "linkParams" : null,
+      "linkTarget" : null,
+      "type" : "PAGE_LINK",
+      "children" : [ ]
+    } ]
+  }
+}, {
+  "id" : "4ff64d74-612b-cb2e-863a-8af8b4a5c3d4",
+  "name" : "enable_contact_area",
+  "display_width" : null,
+  "label" : "Enable Contact Area",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "4edf8e3c-88e8-8b6b-bcb3-1163df26df00",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3f0d7784-41a3-f152-4d4f-737a349b16da",
+    "name" : "disable_logo",
+    "display_width" : null,
+    "label" : "Disable logo?",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "f1972116-ab78-04cc-270d-ceb8db6d1dd5",
+    "name" : "enable_socials",
+    "display_width" : null,
+    "label" : "Enable Socials?",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "disable_logo" : false,
+    "enable_socials" : true
+  }
+}, {
+  "id" : "765c73b6-a9bd-5e05-a9ec-159249ca97b3",
+  "name" : "column_group_4",
+  "display_width" : null,
+  "label" : "Contact and Copyright",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "8d71011b-177c-9404-d26a-2ad04dc357f9",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Contact Us"
+  }, {
+    "id" : "8ad052eb-861a-45eb-45c4-a13c53110247",
+    "name" : "email",
+    "display_width" : null,
+    "label" : "Email",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "abc@gmail.com"
+  }, {
+    "id" : "5a45dbb5-2658-6511-d024-d5f380b96600",
+    "name" : "number",
+    "display_width" : null,
+    "label" : "Number",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "+1-555-555-555"
+  }, {
+    "id" : "9cec30ea-c86f-8659-ffd7-3aebcea00283",
+    "name" : "address",
+    "display_width" : null,
+    "label" : "Address",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "111 ABC St. AA, BB 22222"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "text_field" : "Contact Us",
+    "email" : "abc@gmail.com",
+    "number" : "+1-555-555-555",
+    "address" : "111 ABC St. AA, BB 22222"
+  }
+} ]

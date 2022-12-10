@@ -1,0 +1,233 @@
+{% require_js %}
+
+
+<script defer>
+
+  
+ $(document).ready(function() {
+
+   
+   
+   $('#hs_cos_wrapper_{{ name }} .multi-testbar-row').slick({
+    infinite: false,
+    slidesToShow: {{module.style.slides_to_show}},
+    slidesToScroll: {{module.style.slides_to_scroll}},
+   
+   
+   {% if module.autoplay_slider %} autoplay: true, {% endif %}
+    {% if module.slider_dots %} dots: true, appendDots: $("#hs_cos_wrapper_{{ name }} .slide-m-dots"),  {% endif %}
+   {% if module.slider_arrows %}
+   
+    prevArrow: $('#hs_cos_wrapper_{{ name }} .nextslick'),
+    nextArrow: $('#hs_cos_wrapper_{{ name }} .previousslick'),
+  
+    {% else %}
+    arrows: false,
+   
+   {% endif %}
+
+    responsive: [
+  
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    },
+   
+
+  ]
+
+  });
+  
+   
+   
+});
+  
+
+
+
+</script>
+  
+{% end_require_js %}
+
+
+{% if module.testimonial_style == 'style1' %}
+<div class="multi-testimoniale" style="background:rgba({{module.testimonial_bar_group.bg_color.color|convert_rgb }},{{ module.testimonial_bar_group.bg_color.opacity / 100 }})">
+    <div class="container">
+        <div class="multi-testbar-row dotbaju slick-arblblack {% if module.testimonial_bar_group.all_text_color_whilte_ %} testiall-white {% endif %}">
+          {% for item in module.testimonial_bar_group.testimonial_bar %}
+           <div class="multi-testbar-column">
+            {% if module.testimonial_bar_group.choice_field == 'quote' %}
+             <div class="quote-bar">
+                 <i class="fa fa-quote-left" aria-hidden="true"></i>
+             </div>
+             {% elif module.testimonial_bar_group.choice_field == 'image'  %}
+             <div class="testibar-image" style="background-image:url('{{ item.image_field.src }}')">
+                
+             </div>
+             {% else %}
+             {% endif %}
+             
+             <div class="quote-details" style="max-width:{{ module.testimonial_bar_group.max_width_px_ }}px;">
+                {{ item.details }}
+             </div>
+          </div>
+         {% endfor %} 
+          
+      </div>
+     
+      
+      <div class="testiarrow {% if module.testimonial_bar_group.all_text_color_whilte_ %} testiall-white {% endif %}">
+        {% if module.slider_arrows %} <a class="nextslick"> <img src="https://f.hubspotusercontent40.net/hubfs/3428648/Arrow%203-1.svg" al="">  </a> {% endif %}
+        <div class="slide-m-dots"></div>
+         {% if module.slider_arrows %}  <a class="previousslick"> <img src="https://f.hubspotusercontent40.net/hubfs/3428648/Arrow%202%20(1).svg" al=""> </a> {% endif %}
+      </div> 
+      
+    </div>
+</div>
+
+
+{% elif module.testimonial_style == 'style2' %}
+
+<div class="card-testimoniale" >
+   <div class="container" style="max-width: {{ module.testimonial_card_group.max_width_px_ }}px;">
+       <div class="card-testi-row slick-arblblack {% if module.testimonial_card_group.all_text_color_whilte_ %} testiall-white {% endif %}">
+          {% for item in module.testimonial_card_group.testimonial_card %}
+         <div class="cardtesti-column">
+            <div class="cardtesti-inner" style="border-radius:{{ module.testimonial_card_group.card_radius }}px; background:rgba({{ module.testimonial_card_group.bg_color.color|convert_rgb }},{{ module.testimonial_card_group.bg_color.opacity / 100 }}) ">
+              <div class="cardtesti-image" style="background-image:url('{{ item.testimonial_image.src }}')">
+                  
+              </div>
+              <div class="cardteti-detais">
+                  {{ item.richtext_field }}
+              </div>
+            </div>
+         </div>
+       {% endfor %}
+         
+     </div>
+     
+     {% if module.testimonial_card_group.remove_sluider_ %}
+     
+     <div class="testiarrow {% if module.testimonial_card_group.all_text_color_whilte_ %} testiall-white {% endif %}">
+       {% if module.slider_arrows %} <a class="nextslick"> <img src="https://f.hubspotusercontent40.net/hubfs/3428648/Arrow%203-1.svg" al="">  </a> {% endif %}
+       <div class="slide-m-dots"></div>
+       {% if module.slider_arrows %}  <a class="previousslick"> <img src="https://f.hubspotusercontent40.net/hubfs/3428648/Arrow%202%20(1).svg" al=""> </a> {% endif %}
+     </div> 
+  
+     
+     {% endif %}
+     
+     
+   </div>
+</div>
+
+{% if module.testimonial_card_group.remove_sluider_ %}
+
+{% else %}
+
+  {% require_css %}
+
+  <style>
+    #hs_cos_wrapper_{{ name }} .cardtesti-column { width: calc(100% / 3); margin: 0; padding-bottom: 10px; }
+    #hs_cos_wrapper_{{ name }} .card-testi-row { display: flex; flex-flow: wrap; justify-content: center; }
+    
+    @media (max-width:991px){
+      
+      #hs_cos_wrapper_{{ name }} .cardtesti-column { width: calc(100% / 2); margin: 0; padding-bottom: 10px; }
+    
+    }
+    @media (max-width:768px){
+      
+      #hs_cos_wrapper_{{ name }} .cardtesti-column { width: calc(100% / 1); margin: 0; padding-bottom: 10px; }
+      #hs_cos_wrapper_{{ name }} .cardtesti-column {   padding: 20px 0; }
+      
+    }
+  </style>
+
+  {% end_require_css %}
+
+{% endif %}
+
+
+
+{% require_js %}
+
+
+{% if module.testimonial_card_group.remove_sluider_ %}
+
+<script defer>
+
+  
+ $(document).ready(function() {
+
+   
+   
+   $('#hs_cos_wrapper_{{ name }} .card-testi-row').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+   
+   
+   {% if module.autoplay_slider %} autoplay: true, {% endif %}
+    {% if module.slider_dots %} dots: true, appendDots: $("#hs_cos_wrapper_{{ name }} .slide-m-dots"),  {% endif %}
+   {% if module.slider_arrows %}
+   
+    prevArrow: $('#hs_cos_wrapper_{{ name }} .nextslick'),
+    nextArrow: $('#hs_cos_wrapper_{{ name }} .previousslick'),
+  
+    {% else %}
+    arrows: false,
+   
+   {% endif %}
+
+    responsive: [
+     
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        
+      }
+    },
+  
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        
+      }
+    },
+   
+
+  ]
+
+  });
+  
+   
+   
+});
+  
+
+
+
+</script>
+{% endif %}
+{% end_require_js %}
+
+
+
+
+{%  endif %}
+
+
+
+
+
+
+

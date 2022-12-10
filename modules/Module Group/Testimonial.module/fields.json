@@ -1,0 +1,487 @@
+[ {
+  "id" : "3ed2d602-4039-a62c-a207-a3e1b1874d13",
+  "name" : "testimonial_style",
+  "display_width" : null,
+  "label" : "Testimonial Style",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "style1", "Testimonial Bar" ], [ "style2", "Testimonial Card" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "type" : "choice",
+  "default" : "style1"
+}, {
+  "id" : "c3930042-5f50-f9ef-4ddf-891777306041",
+  "name" : "testimonial_bar_group",
+  "display_width" : null,
+  "label" : "Testimonial Bar Group",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "3ed2d602-4039-a62c-a207-a3e1b1874d13",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "style1",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "2fc26cd6-1359-27b8-0d80-2a3ad1ff3af3",
+    "name" : "bg_color",
+    "display_width" : null,
+    "label" : "BG Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ee877c",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "ce577d29-aec3-1d59-59dd-b1eb58b0c766",
+    "name" : "all_text_color_whilte_",
+    "display_width" : null,
+    "label" : "All Text Color White?",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "4272ae48-6c84-34b5-8fa9-d1125b84afeb",
+    "name" : "choice_field",
+    "display_width" : null,
+    "label" : "Choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "image", "Image" ], [ "quote", "quote" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "type" : "choice",
+    "default" : "quote"
+  }, {
+    "id" : "1da4cb66-867a-d5dc-b2b5-20d5601620d0",
+    "name" : "testimonial_bar",
+    "display_width" : null,
+    "label" : "Testimonial Bar",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 20,
+      "sorting_label_field" : null,
+      "default" : 2
+    },
+    "children" : [ {
+      "id" : "3838e40d-4ade-a761-6b7b-af938a9d73d1",
+      "name" : "image_field",
+      "display_width" : null,
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "4272ae48-6c84-34b5-8fa9-d1125b84afeb",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "image",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "responsive" : true,
+      "resizable" : false,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.remotish.agency/hubfs/Ellipse%20239.png",
+        "alt" : "Ellipse 239",
+        "width" : 353,
+        "height" : 350,
+        "max_width" : 353,
+        "max_height" : 350
+      }
+    }, {
+      "id" : "1f60920c-e00d-a1d4-4246-837cf53bf514",
+      "name" : "details",
+      "display_width" : null,
+      "label" : "Details",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h3>EMPERESS MYST</h3>\n<h4>The Seven Kingdoms, LLC</h4>\n<p>These people know their revenue operations. We've seen a significant downtick in Viking raids, and all seven kingdoms are more peaceful and prosperous.</p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.remotish.agency/hubfs/Ellipse%20239.png",
+        "alt" : "Ellipse 239",
+        "width" : 353,
+        "height" : 350,
+        "max_width" : 353,
+        "max_height" : 350
+      },
+      "details" : "<h3>EMPERESS MYST</h3>\n<h4>The Seven Kingdoms, LLC</h4>\n<p>These people know their revenue operations. We've seen a significant downtick in Viking raids, and all seven kingdoms are more peaceful and prosperous.</p>"
+    }, {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.remotish.agency/hubfs/Ellipse%20239.png",
+        "alt" : "Ellipse 239",
+        "width" : 353,
+        "height" : 350,
+        "max_width" : 353,
+        "max_height" : 350
+      },
+      "details" : "<h3>EMPERESS MYST</h3>\n<h4>The Seven Kingdoms, LLC</h4>\n<p>These people know their revenue operations. We've seen a significant downtick in Viking raids, and all seven kingdoms are more peaceful and prosperous.</p>"
+    } ]
+  }, {
+    "id" : "733f7cb2-e1a5-c857-c810-fa84a8dad102",
+    "name" : "max_width_px_",
+    "display_width" : null,
+    "label" : "Text Max Width(px)",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 100,
+    "max" : 1200,
+    "step" : 5,
+    "type" : "number",
+    "default" : 900
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "bg_color" : {
+      "color" : "#ee877c",
+      "opacity" : 100
+    },
+    "all_text_color_whilte_" : true,
+    "choice_field" : "quote",
+    "testimonial_bar" : [ {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.remotish.agency/hubfs/Ellipse%20239.png",
+        "alt" : "Ellipse 239",
+        "width" : 353,
+        "height" : 350,
+        "max_width" : 353,
+        "max_height" : 350
+      },
+      "details" : "<h3>EMPERESS MYST</h3>\n<h4>The Seven Kingdoms, LLC</h4>\n<p>These people know their revenue operations. We've seen a significant downtick in Viking raids, and all seven kingdoms are more peaceful and prosperous.</p>"
+    }, {
+      "image_field" : {
+        "size_type" : "auto",
+        "src" : "https://www.remotish.agency/hubfs/Ellipse%20239.png",
+        "alt" : "Ellipse 239",
+        "width" : 353,
+        "height" : 350,
+        "max_width" : 353,
+        "max_height" : 350
+      },
+      "details" : "<h3>EMPERESS MYST</h3>\n<h4>The Seven Kingdoms, LLC</h4>\n<p>These people know their revenue operations. We've seen a significant downtick in Viking raids, and all seven kingdoms are more peaceful and prosperous.</p>"
+    } ],
+    "max_width_px_" : 900
+  }
+}, {
+  "id" : "e2b0ae8e-1b48-afee-eb89-6fcf5eba0cd3",
+  "name" : "testimonial_card_group",
+  "display_width" : null,
+  "label" : "Testimonial Card Group",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "3ed2d602-4039-a62c-a207-a3e1b1874d13",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "style2",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "4c05853a-2e46-e591-1e16-5af97d5a14ed",
+    "name" : "bg_color",
+    "display_width" : null,
+    "label" : " Card  Bg Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "30f5bdc7-0151-9fd2-b24b-e19b354c0c79",
+    "name" : "all_text_color_whilte_",
+    "display_width" : null,
+    "label" : "All Text Color Whilte?",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "089867a3-f400-4fc7-28a6-304c1dcff076",
+    "name" : "remove_sluider_",
+    "display_width" : null,
+    "label" : "On/Off Slider",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "e9c7e0db-e54b-df40-e107-5fb8bfc97825",
+    "name" : "testimonial_card",
+    "display_width" : null,
+    "label" : "Testimonial Card",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 50,
+      "sorting_label_field" : null,
+      "default" : 4
+    },
+    "children" : [ {
+      "id" : "8fad262a-b182-45a5-69cc-1b56c6ab16f6",
+      "name" : "testimonial_image",
+      "display_width" : null,
+      "label" : "Testimonial Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://www.remotish.agency/hubfs/Ellipse%20240.png",
+        "alt" : "Ellipse 240",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      }
+    }, {
+      "id" : "905d2519-2a3c-a743-9c32-d652548374b4",
+      "name" : "richtext_field",
+      "display_width" : null,
+      "label" : "Rich text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h5>LEA A. C. S.</h5>\n<h6>CEO</h6>\n<p>“Our balanced approach to marketing in HubSpot helps pipeline filling teams get results faster.”</p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "testimonial_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.remotish.agency/hubfs/Ellipse%20240.png",
+        "alt" : "Ellipse 240",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "richtext_field" : "<h5>LEA A. C. S.</h5>\n<h6>CEO</h6>\n<p>“Our balanced approach to marketing in HubSpot helps pipeline filling teams get results faster.”</p>"
+    }, {
+      "testimonial_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.remotish.agency/hubfs/Ellipse%20240.png",
+        "alt" : "Ellipse 240",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "richtext_field" : "<h5>LEA A. C. S.</h5>\n<h6>CEO</h6>\n<p>“Our balanced approach to marketing in HubSpot helps pipeline filling teams get results faster.”</p>"
+    }, {
+      "testimonial_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.remotish.agency/hubfs/Ellipse%20240.png",
+        "alt" : "Ellipse 240",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "richtext_field" : "<h5>LEA A. C. S.</h5>\n<h6>CEO</h6>\n<p>“Our balanced approach to marketing in HubSpot helps pipeline filling teams get results faster.”</p>"
+    }, {
+      "testimonial_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.remotish.agency/hubfs/Ellipse%20240.png",
+        "alt" : "Ellipse 240",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "richtext_field" : "<h5>LEA A. C. S.</h5>\n<h6>CEO</h6>\n<p>“Our balanced approach to marketing in HubSpot helps pipeline filling teams get results faster.”</p>"
+    } ]
+  }, {
+    "id" : "a5f1b0c1-4da4-75a5-9beb-17eadcd7af97",
+    "name" : "max_width_px_",
+    "display_width" : null,
+    "label" : "Max Width (PX)",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 200,
+    "max" : 1200,
+    "step" : 5,
+    "type" : "number",
+    "default" : 1060
+  }, {
+    "id" : "c915cf4d-5f16-19a9-ecba-23bb90f9cb68",
+    "name" : "card_radius",
+    "display_width" : null,
+    "label" : "Card Radius",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 0,
+    "max" : 70,
+    "step" : 1,
+    "type" : "number",
+    "default" : 0
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "bg_color" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    },
+    "all_text_color_whilte_" : false,
+    "remove_sluider_" : true,
+    "testimonial_card" : [ {
+      "testimonial_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.remotish.agency/hubfs/Ellipse%20240.png",
+        "alt" : "Ellipse 240",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "richtext_field" : "<h5>LEA A. C. S.</h5>\n<h6>CEO</h6>\n<p>“Our balanced approach to marketing in HubSpot helps pipeline filling teams get results faster.”</p>"
+    }, {
+      "testimonial_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.remotish.agency/hubfs/Ellipse%20240.png",
+        "alt" : "Ellipse 240",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "richtext_field" : "<h5>LEA A. C. S.</h5>\n<h6>CEO</h6>\n<p>“Our balanced approach to marketing in HubSpot helps pipeline filling teams get results faster.”</p>"
+    }, {
+      "testimonial_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.remotish.agency/hubfs/Ellipse%20240.png",
+        "alt" : "Ellipse 240",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "richtext_field" : "<h5>LEA A. C. S.</h5>\n<h6>CEO</h6>\n<p>“Our balanced approach to marketing in HubSpot helps pipeline filling teams get results faster.”</p>"
+    }, {
+      "testimonial_image" : {
+        "size_type" : "auto",
+        "src" : "https://www.remotish.agency/hubfs/Ellipse%20240.png",
+        "alt" : "Ellipse 240",
+        "width" : 162,
+        "height" : 162,
+        "max_width" : 162,
+        "max_height" : 162
+      },
+      "richtext_field" : "<h5>LEA A. C. S.</h5>\n<h6>CEO</h6>\n<p>“Our balanced approach to marketing in HubSpot helps pipeline filling teams get results faster.”</p>"
+    } ],
+    "max_width_px_" : 1060,
+    "card_radius" : 0
+  }
+}, {
+  "id" : "605c5492-7602-e0b9-9b60-8a9c281c93b1",
+  "name" : "autoplay_slider",
+  "display_width" : null,
+  "label" : "Autoplay Slider",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "b8ecc50e-f000-a3de-2fd8-07e04a251ec5",
+  "name" : "slider_dots",
+  "display_width" : null,
+  "label" : "Slider Dots",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "9abe830b-4da1-0f05-b26c-1fd81e9a50c7",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "373f7b1e-0cd0-0d48-d149-a3feab2bc744",
+    "name" : "slides_to_show",
+    "display_width" : null,
+    "label" : "Slides to show",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 1,
+    "max" : 3,
+    "step" : 1,
+    "type" : "number",
+    "default" : 1
+  }, {
+    "id" : "b209d21e-f89f-5441-a8e5-7105e6ffb8bc",
+    "name" : "slides_to_scroll",
+    "display_width" : null,
+    "label" : "Slides to scroll",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 1,
+    "max" : 3,
+    "step" : 1,
+    "type" : "number",
+    "default" : 1
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "slides_to_show" : 1,
+    "slides_to_scroll" : 1
+  }
+}, {
+  "id" : "22cdd3f5-8ae6-80b2-a77f-ff908cdf4e7c",
+  "name" : "slider_arrows",
+  "display_width" : null,
+  "label" : "Slider Arrows",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+} ]

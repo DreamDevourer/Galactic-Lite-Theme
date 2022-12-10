@@ -1,0 +1,120 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Landing Page - Form
+  screenshotPath: ../images/Thumbnails/Theme Template - Landing Page.png
+--> 
+
+{% extends './layouts/base.html' %}
+{% set back_header = "black-header" %}
+ 
+
+{% block header %} 
+
+<div class="transparent_header ">
+       {% global_partial path='./partials/header.html' %}
+</div>
+
+{% endblock header %} 
+
+
+{% block body %}
+<main class="body-container-wrapper">
+  {% dnd_area 'dnd_area' class='body-container body-container--about', label='Main section' %}
+
+
+
+  
+  
+  {# Hero section #}
+  {% dnd_section
+
+  
+  %}
+    {% dnd_module path='../modules/Landing Hero Module',
+        
+    
+      label="Landing Hero Module" %} {% end_dnd_module %}
+  {% end_dnd_section %}
+  {# hero section #}
+
+  
+  {# Services Icon Box Module #}
+  {% dnd_section %}
+    {% dnd_module path='../modules/Services Icon Box Module',
+       services_box = [
+          {
+          services_title : "Security First",
+          services_image : {
+            src : "{{ get_asset_url('../../images/bi_shield-fill.png') }}"
+          },
+          services_content : "
+              Connect the tools you already use to get more from them every time you work.
+            "
+          
+          
+          },
+          {
+           services_title : "Security First",
+          services_image : {
+            src : "{{ get_asset_url('../../images/bi_shield-fill.png') }}"
+          },
+          services_content : "
+              Connect the tools you already use to get more from them every time you work.
+            "
+          
+          },  
+          {
+          services_title : "Security First",
+          services_image : {
+            src : "{{ get_asset_url('../../images/bi_shield-fill.png') }}"
+          },
+          services_content : "
+              Connect the tools you already use to get more from them every time you work.
+            "
+          
+          }  
+          
+          
+       ]
+    
+    
+     label="Services Icon Box Module" %}
+  
+  
+  {% end_dnd_module %}
+  {% end_dnd_section %}
+  {# Services Icon Box Module #}
+  
+  
+  
+  {# Contact Us Form Module #}
+  {% dnd_section %}
+    {% dnd_module path='../modules/Contact Us Form Module',
+    
+      label="Contact Us Form Module",
+     
+    
+    %} {% end_dnd_module %}
+  {% end_dnd_section %}
+  {# Contact Us Form Module #}
+
+  
+    {# Contact Us Form Module #}
+  {% dnd_section %}
+    {% dnd_module path="../modules/Logo Module - With Icons",
+      
+    
+    %} {% end_dnd_module %}
+  {% end_dnd_section %}
+  {# Contact Us Form Module #}
+  
+  
+   
+  
+  
+  
+  
+  {% end_dnd_area %}
+</main>
+{% endblock body %}

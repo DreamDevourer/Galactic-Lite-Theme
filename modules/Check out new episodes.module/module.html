@@ -1,0 +1,73 @@
+  <section class="check_out">
+ 
+    <div class="container">
+      
+      <div class="check_out_name">
+										{% if module.style.enable_title %}
+        <h2>{{ module.title }}</h2>
+										{% endif %}
+        
+        {% if module.button_text %}
+        <div class="border_botton">
+          {% set href = module.button_link.url.href %}
+          {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% set rel = [] %}
+          {% if module.button_link.no_follow %}
+          {% do rel.append("nofollow") %}
+          {% endif %}
+          {% if module.button_link.open_in_new_tab %}
+          {% do rel.append("noopener") %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+             {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+             >
+          {{ module.button_text }}
+          </a>
+        </div>
+        {% endif %}
+        
+      </div>
+      
+      <div class="check_bolg_row">
+      {% for item in module.field_group %}  
+        <div class="check_bolg_cover">
+          <div class="check_image" style="background-image:url('{{ item.image_field.src }}')">
+            
+          </div>
+          <div class="check_out_text">
+            <h3> {{ item.episode_no }} <br> {{ item.text_field }} </h3>
+          </div>
+         
+          {% if item.link_field.url.href %}
+          {% set href = item.link_field.url.href %}
+          {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% set rel = [] %}
+          {% if item.link_field.no_follow %}
+          {% do rel.append("nofollow") %}
+          {% endif %}
+          {% if item.link_field.open_in_new_tab %}
+          {% do rel.append("noopener") %}
+          {% endif %}
+          <a class="position_link" href="{{ href }}"
+             {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+             {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+             >
+
+          </a>
+          {% endif %}
+          
+        </div>
+        {% endfor %}
+        
+        
+               
+      </div>
+      
+    </div>
+
+  </section>

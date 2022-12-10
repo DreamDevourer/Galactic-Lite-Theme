@@ -1,0 +1,164 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Home
+  screenshotPath: ../images/Thumbnails/Theme Template - Home.png
+--> 
+
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  {% dnd_area 'dnd_area' class='body-container body-container--home', label='Main section' %}
+
+		  {# Second Section #}
+    {% dnd_section
+         padding={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+      full_width='true',
+      flexbox_positioning="MIDDLE_LEFT"
+
+    
+    %}
+		
+  {% dnd_module "hero_section" path='../modules/About Hero' %}
+		{% end_dnd_module %}
+  
+		 {% end_dnd_section %}
+    {# End second section#}
+    
+  {# Second Section #}
+    {% dnd_section
+      
+         padding={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+      full_width='true',
+      flexbox_positioning="MIDDLE_LEFT"
+
+    
+    %}
+          {% dnd_module
+            path='../modules/2-Column Text Block', 
+            flexbox_positioning="TOP_CENTER",
+          %}
+  
+          {% end_dnd_module %}
+   
+  
+    {% end_dnd_section %}
+    {# End second section#}
+  
+  
+  {# Video Section #}
+    {% dnd_section
+      
+         padding={
+        'top': 0,
+        'bottom': 70,
+        'left': 0,
+        'right': 0
+      },
+      full_width='true',
+      flexbox_positioning="MIDDLE_LEFT"
+
+    
+    %}
+   
+    
+    
+          {% dnd_module
+            path='../modules/Module Group/Gallery Image', 
+            flexbox_positioning="TOP_CENTER",
+        
+            
+            
+          %}
+  
+          {% end_dnd_module %}
+   
+  
+    {% end_dnd_section %}
+    {# End Value section#}
+  
+  
+  
+  {#  start header Section #}
+    {% dnd_section
+      
+         padding={
+        'top': 30,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+      full_width='true',
+      flexbox_positioning="MIDDLE_LEFT"
+
+    
+    %}
+   
+    
+    
+          {% dnd_module
+            path='../modules/Module Group/Header and Subheader with CTA',
+            text_position="center_position",
+            divider_= false,
+            richtext_field = "<h2>REASONS TO WORK WITH US</h2><p>We're pretty clever.&nbsp;</p>"
+            flexbox_positioning="TOP_CENTER",
+        
+            
+            
+          %}
+  
+          {% end_dnd_module %}
+   
+  
+    {% end_dnd_section %}
+    {# header section#}
+  
+  
+  {#  card flipper Section #}
+    {% dnd_section
+      
+         padding={
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
+      },
+      full_width='true',
+      flexbox_positioning="MIDDLE_LEFT"
+
+    
+    %}
+   
+          {% dnd_module
+            path='../modules/Testimonial Section',
+          %}
+            
+  
+          {% end_dnd_module %}
+   
+  
+    {% end_dnd_section %}
+    {# end card flipper Section #}
+  
+  
+  
+
+  {% end_dnd_area %}
+  
+ {# end DND Area #}   
+  
+  
+  
+</main>
+{% endblock body %}

@@ -1,0 +1,112 @@
+[ {
+  "id" : "81b03716-5a58-9e40-e0a7-c3d37684736f",
+  "name" : "video_link",
+  "display_width" : null,
+  "label" : "Video Link",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://youtu.be/9xwazD5SyVg"
+}, {
+  "id" : "86a477df-789b-a9e0-6e79-6825fb0306c0",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "2021 - John Doe"
+}, {
+  "id" : "5a8aa9ef-3d61-b544-2e24-20e7138d3123",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Episode 4: Increase Sales"
+}, {
+  "id" : "781bce09-522c-b542-944c-64691ce840be",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio purus suspendisse suspendisse interdum etiam a, elit donec. Mauris egestas semper nullam montes, mi augue. Aliquam dui lectus ut arcu. Commodo diam luctus dolor faucibus donec mauris. Nunc sed magna ut neque a leo. Et nulla blandit dictum egestas nullam. Mauris quam pharetra, suspendisse id. Quam diam pulvinar placerat porttitor ut nunc diam. Nisi, egestas augue turpis viverra ac condimentum purus, commodo. Sagittis amet pulvinar neque tellus, risus, nunc. Nisi enim lectus tincidunt ut. Nulla iaculis tincidunt bibendum morbi sit. Leo ac viverra ullamcorper ac. Felis tortor elit mauris scelerisque enim. Vestibulum sit dui dui orci. Enim fermentum, laoreet vitae et facilisi at facilisis. Lectus mauris a lacinia nulla mauris, faucibus pretium.</p>"
+}, {
+  "id" : "2ab2bce8-9a43-24d3-625e-dea927779e0f",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Listen More"
+}, {
+  "id" : "22d351a9-b011-0312-c490-6855ca3a4c1a",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "7fe0321c-6651-0a9b-2731-fecdacc2cf84",
+    "name" : "enable_title",
+    "display_width" : null,
+    "label" : "Enable title",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "7a29b3af-376b-9c43-e60b-66236b466b4a",
+    "name" : "enable_button",
+    "display_width" : null,
+    "label" : "Enable button",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_title" : true,
+    "enable_button" : true
+  }
+}, {
+  "id" : "9d0d4fc8-2867-27ac-a6d6-26a8c4b00a3f",
+  "name" : "link_field",
+  "display_width" : null,
+  "label" : "Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

@@ -1,0 +1,33 @@
+<section class="testimonial__main">
+    <div class="container">
+        <div class="testimonial__row">
+            <div class="testimonial__left">
+																{% if module.style.enable_profile_name %}
+                <h2>
+                  {{ module.profile_name }}
+                </h2>
+																{% endif %}
+																{% if module.style.enable_position %}
+                <div class="profile_possition">
+                  {{ module.profile_possition }}
+                </div>
+																{% endif %}
+                <div class="profile_text">
+                  {{ module.richtext_field }}
+                </div>
+            </div>
+            <div class="testimonial__right">
+              {% if module.image_field.src %}
+              {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+              {% if module.image_field.size_type == 'auto' %}
+              {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+              {% elif module.image_field.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+              <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

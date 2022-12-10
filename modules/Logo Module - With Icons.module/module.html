@@ -1,0 +1,103 @@
+<div class="logo_area">
+  <div class="container">
+
+    <div class="logo_header">
+      {% if module.header.icon_image.src  %}
+      <div class="logo_icon">
+        {% if module.header.icon_image.src %}
+        {% set sizeAttrs = 'width="{{ module.header.icon_image.width }}" height="{{ module.header.icon_image.height }}"' %}
+        {% if module.header.icon_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif module.header.icon_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.header.icon_image.max_width }}" height="{{ module.header.icon_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.header.icon_image.loading != 'disabled' ? 'loading="{{ module.header.icon_image.loading }}"' : '' %}
+        <img src="{{ module.header.icon_image.src }}" alt="{{ module.header.icon_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      {% endif %}
+      
+								{% if module.style.enable_text %}
+      {% if module.header.text %}
+      <div class="logo_header">
+        <h3>
+          {{ module.header.text }}
+        </h3>
+      </div>
+      {% endif %}
+								{% endif %}
+    </div>
+    
+    <div class="logo_cover">
+      {% for item in module.logo_box %}
+      <div class="logo_box">
+       {% if item.logo.src %}
+        <div class="logo">
+          {% set href = item.link_field.url.href %}
+          {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+         {% if item.link_field.url.href %} <a href="{{ href }}" 
+             {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+             {% if item.link_field.rel %}rel="{{ item.link_field.rel }}"{% endif %}
+             > {% endif %}
+          {% set sizeAttrs = 'width="{{ item.logo.width }}" height="{{ item.logo.height }}"' %}
+          {% if item.logo.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif item.logo.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.logo.max_width }}" height="{{ item.logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = item.logo.loading != 'disabled' ? 'loading="{{ item.logo.loading }}"' : '' %}
+          <img src="{{ item.logo.src }}" alt="{{ item.logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+       {% if item.link_field.url.href %} </a> {% endif %}
+        </div>
+      	{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+
+
+{% require_js %}
+<script>
+$(document).ready(function() {  
+$('#hs_cos_wrapper_{{name}} .logo_cover').slick({
+  infinite: {% if module.style.infinite_scroll %}true{% else %}false{% endif %},
+  arrows:false,
+  dots:true,
+  slidesToShow: {{module.style.slides_to_show}},
+  slidesToScroll: {{module.style.slides_to_scroll}},
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+});
+</script>
+{% end_require_js %}
+

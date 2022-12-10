@@ -1,0 +1,73 @@
+{{ require_js("https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js") }}
+
+<section class="main_hero">  
+    <div class="container">
+      <div class="mani_hero_row">
+        <div class="blog1_left"> 
+     {% for content in contents %}
+          {% if loop.first %}
+          <div class="main_card_cover">
+            <div class="card_image" style="background-image:url('{{ content.featured_image }}')">
+               
+            </div>
+            <div class="card_details">
+              <span class="blog_year">{{ content.publish_date|datetimeformat('%Y') }}  - {{ content.blog_author.display_name }}</span>
+                <a href="{{ content.absolute_url }}"> <h2>{{ content.name }}</h2> </a>
+                <p>      {{ content.post_list_content|safe|striptags|truncate(180) }}  </p>
+            </div>
+          </div>
+          {% endif %}
+     {% endfor %}
+          
+          <div class="main_card_row">
+          {% for content in contents %} 
+            {% if loop.index >= 2  and loop.index <= 5  %}
+            <div class="main_card_cover2">
+              <div class="card_image" style="background-image:url('{{ content.featured_image }}')">
+              </div>
+              <div class="card_details">
+                <span class="blog_year">{{ content.publish_date|datetimeformat('%Y') }} - {{ content.blog_author.display_name }}</span>
+                  <a href="{{ content.absolute_url }}">  <h2>{{ content.name }}</h2> </a>
+                <p>
+                 {{ content.post_list_content|safe|striptags|truncate(180) }}
+                </p>
+              </div>
+            </div>
+          {% endif %}
+           {% endfor %}   
+           
+            
+            
+          </div>
+        </div>
+        
+        <div class="blog2_right">
+												{% if module.style.enable_recent_articles_title %}
+          <div class="blog_details_name">
+            <h2> Recent Articles</h2>
+          </div>
+												{% endif %}
+          
+          <div class="blog_details_cover">
+           {% for content in contents %}  
+               {% if loop.index <=  module.show_no_of_recent_post %}
+                  <div class="card_details">
+																						{% if module.style.enable_recent_date %}
+                    <span class="blog_year">{{ content.publish_date|datetimeformat('%Y') }} - {{ content.blog_author.display_name }}</span>
+																						{% endif %}
+                    <h2><a href="{{ content.absolute_url }}">  <h2>{{ content.name }}</h2> </a></h2>
+                    <p>
+                     {{ content.post_list_content|safe|striptags|truncate(180) }}                      
+                    </p>
+                  </div>
+               {% endif %}
+           {% endfor %}
+        
+            
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+ </section>

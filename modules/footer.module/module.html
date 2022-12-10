@@ -1,0 +1,121 @@
+{% require_css %}
+<style>
+{% scope_css %}
+				.fa, .far, .fas {
+								font-family: "Font Awesome 5 Brands" !important;
+				}
+
+{% end_scope_css %}
+</style>
+{% end_require_css %}
+
+<div class="row-fluid">
+  <div class="footer">
+   <div class="container">
+     <div class="span4 widget-span widget-type-cell f-column">
+        {% if module.style.disable_logo == 'false' %}
+									<div class="f-logo">
+          {% if module.footer_column_1.footer_logo.src %}
+          {% set sizeAttrs = 'width="{{ module.footer_column_1.footer_logo.width }}" height="{{ module.footer_column_1.footer_logo.height }}"' %}
+          {% if module.footer_column_1.footer_logo.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.footer_column_1.footer_logo.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.footer_column_1.footer_logo.max_width }}px; max-height: {{ module.footer_column_1.footer_logo.max_height }}px"' %}
+          {% endif %}
+          <img src="{{ module.footer_column_1.footer_logo.src }}" alt="{{ module.footer_column_1.footer_logo.alt }}" {{ sizeAttrs }}>
+          {% endif %}
+       </div>
+									{% endif %}
+       <div class="f-details">
+          {{ module.footer_column_1.richtext_field }}
+       </div>
+       
+       {% if module.footer_column_1.style.enable_socials %}
+       <div class="folap-language">
+         <ul class="sociale-share">
+           {% if module.footer_column_1.enable_facebook %}
+           <li><a href="{{ module.footer_column_1.facebook }}" target="_blank"> <i class="fa fa-facebook-square"></i> </a></li>
+           {% endif %}
+           {% if module.footer_column_1.enable_instagram %}
+           <li><a href="{{ module.footer_column_1.instagram }}" target="_blank"> <i class="fa fa-instagram"></i> </a></li>
+           {% endif %}
+           {% if module.footer_column_1.enable_twitter %}
+           <li><a href="{{ module.footer_column_1.twitter }}" target="_blank"> <i class="fa fa-twitter-square"></i> </a></li>  
+           {% endif %}
+           {% if module.footer_column_1.enable_linkedin %}
+           <li><a href="{{ module.footer_column_1.linkedin }}" target="_blank"> <i class="fa fa-linkedin"></i>
+             </a></li>
+           {% endif %}
+           {% if module.footer_column_1.enable_youtube %}
+           <li><a href="{{ module.footer_column_1.youtube }}" target="_blank"> <i class="fa-brands fa-youtube"></i>
+             </a></li>
+           {% endif %}
+
+
+
+         </ul>
+       </div>
+       {% endif %}
+       
+
+       
+     </div>
+     <div class="span3 widget-span widget-type-cell f-column">
+        <div class="footer-logos1">
+          {% if module.footer_coulmn_2.image_field.src %}
+          {% set sizeAttrs = 'width="{{ module.footer_coulmn_2.image_field.width }}" height="{{ module.footer_coulmn_2.image_field.height }}"' %}
+          {% if module.footer_coulmn_2.image_field.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.footer_coulmn_2.image_field.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.footer_coulmn_2.image_field.max_width }}px; max-height: {{ module.footer_coulmn_2.image_field.max_height }}px"' %}
+          {% endif %}
+          <img src="{{ module.footer_coulmn_2.image_field.src }}" alt="{{ module.footer_coulmn_2.image_field.alt }}" {{ sizeAttrs }}>
+        {% endif %}
+       </div>
+       <div class="footer-logos2">
+             {% if module.footer_coulmn_2.image_2.src %}
+      {% set sizeAttrs = 'width="{{ module.footer_coulmn_2.image_2.width }}" height="{{ module.footer_coulmn_2.image_2.height }}"' %}
+      {% if module.footer_coulmn_2.image_2.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif module.footer_coulmn_2.image_2.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.footer_coulmn_2.image_2.max_width }}px; max-height: {{ module.footer_coulmn_2.image_2.max_height }}px"' %}
+      {% endif %}
+      <img src="{{ module.footer_coulmn_2.image_2.src }}" alt="{{ module.footer_coulmn_2.image_2.alt }}" {{ sizeAttrs }}>
+    {% endif %}
+       </div>
+     </div>
+     <div class="span2 widget-span widget-type-cell f-column f-menu-leftp">
+        <div class="f-title">
+          {{ module.footer_column_3.title }}
+       </div>
+       <div class="footer-link">
+        {% simple_menu menu_tree="{{ module.footer_column_3.simplemenu_field }}" %}
+       </div>
+     </div>
+     <div class="span3 widget-span widget-type-cell f-column last-fildf">
+        <div class="f-title">
+          {{ module.column_group_4.text_field }}
+       </div>
+							{% if module.enable_contact_area %}
+       <div class="email-address">
+              <p class="cont light mb-10"><span class="color">Email:</span> <a href="mailto:{{ module.column_group_4.email }}"> {{ module.column_group_4.email }} </a></p>
+              <p class="cont light mb-10"><span class="color">Phone:</span> <a href="tel:{{ module.column_group_4.number }}" rel="noopener" target="_blank"> {{ module.column_group_4.number }} </a></p>
+              <p class="cont light"><span class="color">Address:</span> {{module.column_group_4.address }} </p>
+       </div>
+							{% endif %}
+     </div>
+  </div>
+</div>
+</div>
+
+{% require_js %}
+
+<script>
+  $(window).load(function(){
+       $(".language_switcher").insertAfter(".folap-language");
+   });  
+</script>
+
+{% end_require_js %}
+
+

@@ -1,0 +1,362 @@
+[ {
+  "id" : "7f447431-3b7a-81ea-f5d8-a51f93e6cff3",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>Get Started with Us!</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas vehicula posuere ut sollicitudin duis amet. Est elit leo suscipit tempor blandit quisque.</p>"
+}, {
+  "id" : "53bc09ae-e923-88cc-d1ef-fa4623944bb2",
+  "name" : "job_group",
+  "display_width" : null,
+  "label" : "Job Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 16
+  },
+  "children" : [ {
+    "id" : "fcb2e7a3-da81-2403-a4e4-060f79798a8c",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "  DIGITAL PROJECT STRATEGIST"
+  }, {
+    "id" : "d78f3b0d-247c-ed0b-541f-40a49ee77056",
+    "name" : "caption",
+    "display_width" : null,
+    "label" : "Caption",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Remote"
+  }, {
+    "id" : "702f0e63-9bde-e69e-f8ce-f1146ce15c37",
+    "name" : "location",
+    "display_width" : null,
+    "label" : "Location",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "San Diego, CA"
+  }, {
+    "id" : "39c11fb3-b120-9558-56d4-3716fb1cbcee",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "title" : "  DIGITAL PROJECT STRATEGIST",
+    "caption" : "Remote",
+    "location" : "San Diego, CA",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "title" : "  DIGITAL PROJECT STRATEGIST",
+    "caption" : "Remote",
+    "location" : "San Diego, CA",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "title" : "  DIGITAL PROJECT STRATEGIST",
+    "caption" : "Remote",
+    "location" : "San Diego, CA",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "title" : "  DIGITAL PROJECT STRATEGIST",
+    "caption" : "Remote",
+    "location" : "San Diego, CA",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "title" : "  DIGITAL PROJECT STRATEGIST",
+    "caption" : "Remote",
+    "location" : "San Diego, CA",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "title" : "  DIGITAL PROJECT STRATEGIST",
+    "caption" : "Remote",
+    "location" : "San Diego, CA",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "title" : "  DIGITAL PROJECT STRATEGIST",
+    "caption" : "Remote",
+    "location" : "San Diego, CA",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "title" : "  DIGITAL PROJECT STRATEGIST",
+    "caption" : "Remote",
+    "location" : "San Diego, CA",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "title" : "  DIGITAL PROJECT STRATEGIST",
+    "caption" : "Remote",
+    "location" : "San Diego, CA",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "title" : "  DIGITAL PROJECT STRATEGIST",
+    "caption" : "Remote",
+    "location" : "San Diego, CA",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "title" : "  DIGITAL PROJECT STRATEGIST",
+    "caption" : "Remote",
+    "location" : "San Diego, CA",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "title" : "  DIGITAL PROJECT STRATEGIST",
+    "caption" : "Remote",
+    "location" : "San Diego, CA",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "title" : "  DIGITAL PROJECT STRATEGIST",
+    "caption" : "Remote",
+    "location" : "San Diego, CA",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "title" : "  DIGITAL PROJECT STRATEGIST",
+    "caption" : "Remote",
+    "location" : "San Diego, CA",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "title" : "  DIGITAL PROJECT STRATEGIST",
+    "caption" : "Remote",
+    "location" : "San Diego, CA",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "title" : "  DIGITAL PROJECT STRATEGIST",
+    "caption" : "Remote",
+    "location" : "San Diego, CA",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "707edd23-1ecc-9438-a7df-610b7031dd9c",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "1b45ad6d-fd41-a3ca-dd0d-bd7ce4e64267",
+    "name" : "enable_main_title",
+    "display_width" : null,
+    "label" : "Enable main title",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "c7274d97-8d0f-9c59-8a84-179a7f832b9e",
+    "name" : "enable_caption",
+    "display_width" : null,
+    "label" : "Enable Caption",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "5ac20618-7a36-8f80-e18c-6e884f3bd8d3",
+    "name" : "enable_location",
+    "display_width" : null,
+    "label" : "Enable Location",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_main_title" : true,
+    "enable_caption" : true,
+    "enable_location" : true
+  }
+}, {
+  "id" : "80850354-f3d0-6e21-f8a1-d98df03f113f",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Load more positions"
+}, {
+  "id" : "e25a8121-02dc-e760-f010-617336c6a054",
+  "name" : "load_more_button",
+  "display_width" : null,
+  "label" : "Load More Button",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Load more positions",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Load more positions"
+} ]

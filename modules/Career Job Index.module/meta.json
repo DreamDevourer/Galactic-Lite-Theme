@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Alternate%20User:SOLID",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 93554206302,
+  "label" : "Career Individuals",
+  "is_available_for_new_content" : true
+}
