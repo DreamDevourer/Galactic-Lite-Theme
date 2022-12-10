@@ -1,11 +1,7 @@
 <h1 align="center">Galactic Lite 🪐</h1>
 
 <p align="center">
-Galactic Lite is the perfect free and compact option of Galactic Pro for B2B companies looking for a fully optimized theme out-of-the-box from an award-winning design and development team.
-
-Galactic Pro (also called just Galactic) is directly based on this theme.
-
-Designed and developed by the award-winning Remotish team.
+Galactic Lite is the perfect free and compact option of Galactic Pro for B2B companies looking for a fully optimized theme out-of-the-box from an award-winning design and development team. Galactic Pro (also called just Galactic) is directly based on this theme. Designed and developed by the award-winning Remotish team.
 </p>
 
 <p align="center">
